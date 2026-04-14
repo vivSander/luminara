@@ -1,0 +1,64 @@
+{
+	"$NodeId":	"Constant.Assignments-lumi-mg-stamina-0001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Mountains_Green_Stamina",
+	"Prop":	{
+		"$NodeId":	"Column.Prop-lumi-mg-stamina-0002",
+		"Type":	"Column",
+		"Skip":	false,
+		"ColumnBlocks":	[{
+				"$NodeId":	"Block.Column.Prop-lumi-mg-stamina-0003",
+				"Y":	0,
+				"Material":	{
+					"$NodeId":	"Material-lumi-mg-stamina-0004",
+					"Solid":	"Plant_Crop_Stamina_2",
+					"SolidBottomUp":	false
+				}
+			}],
+		"Directionality":	{
+			"$NodeId":	"Random.Directionality-lumi-mg-stamina-0005",
+			"Type":	"Random",
+			"Seed":	"LumiMtnG-St",
+			"Pattern":	{
+				"$NodeId":	"Floor.Pattern-lumi-mg-stamina-0006",
+				"Type":	"Floor",
+				"Skip":	false,
+				"Origin":	{
+					"$NodeId":	"BlockType.Pattern-lumi-mg-stamina-0007",
+					"Type":	"BlockType",
+					"Skip":	false,
+					"Material":	{
+						"$NodeId":	"Material-lumi-mg-stamina-0008",
+						"Solid":	"Empty",
+						"SolidBottomUp":	false
+					}
+				},
+				"Floor":	{
+					"$NodeId":	"BlockSet.Pattern-lumi-mg-stamina-0009",
+					"Type":	"BlockSet",
+					"Skip":	false,
+					"BlockSet":	{
+						"$NodeId":	"BlockSet.BlockMask-lumi-mg-stamina-000a",
+						"Inclusive":	true,
+						"Materials":	[{
+								"$NodeId":	"Material-lumi-mg-stamina-000b",
+								"Solid":	"Soil_Grass",
+								"SolidBottomUp":	false
+							}]
+					}
+				}
+			}
+		},
+		"Scanner":	{
+			"$NodeId":	"ColumnLinear.Scanner-lumi-mg-stamina-000c",
+			"Type":	"ColumnLinear",
+			"Skip":	false,
+			"MaxY":	255,
+			"MinY":	-3,
+			"RelativeToPosition":	false,
+			"BaseHeightName":	"Base",
+			"TopDownOrder":	true,
+			"ResultCap":	1
+		}
+	}
+}

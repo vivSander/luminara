@@ -1,0 +1,32 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Animal_Neutral",
+  "Modify": {
+    "Appearance": "Fairy",
+    "AttitudeGroup": "PreyBig",
+    "FlockArray": [
+      "Fairy"
+    ],
+    "AttractiveItemSet": [
+      "Plant_Fruit_Berries_Red"
+    ],
+    "AttractiveItemSetParticles": "Want_Food_Carrot",
+    "MaxHealth": 20,
+    "MaxSpeed": 6,
+    "ViewRange": 12,
+    "ViewSector": 300,
+    "HearingRange": 8,
+    "AlertedRange": 14,
+    "AlertedActionRange": 6,
+    "AbsoluteDetectionRange": 1,
+    "IsMemory": true,
+    "MemoriesNameOverride": "Fairy",
+    "NameTranslationKey": { "Compute": "NameTranslationKey" }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "adoa.luminara.npcRoles.Fairy.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

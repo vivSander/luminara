@@ -1,0 +1,744 @@
+{
+    "$NodeId":  "Constant.Assignments-bb020202-0000-4000-8000-000000000001",
+    "Type":  "Constant",
+    "ExportAs":  "Luminara_Props",
+    "Prop":  {
+                 "$NodeId":  "Weighted.Prop-bb020202-0000-4000-8000-000000000002",
+                 "Type":  "Weighted",
+                 "Skip":  false,
+                 "Entries":  [
+                                 {
+                                     "$NodeId":  "Entry.Weighted.Prop-bb020202-0000-4000-8000-000000000010",
+                                     "Prop":  {
+                                                  "$NodeId":  "Cluster.Prop-bb020202-0000-4000-8000-000000000011",
+                                                  "Type":  "Cluster",
+                                                  "Skip":  true,
+                                                  "Range":  8,
+                                                  "Seed":  "Lumi-A",
+                                                  "DistanceCurve":  {
+                                                                        "$NodeId":  "ManualCurve-bb020202-0000-4000-8000-000000000012",
+                                                                        "Type":  "Manual",
+                                                                        "Points":  [
+                                                                                       {
+                                                                                           "$NodeId":  "CurvePoint-bb020202-0000-4000-8000-000000000013",
+                                                                                           "In":  0,
+                                                                                           "Out":  1
+                                                                                       },
+                                                                                       {
+                                                                                           "$NodeId":  "CurvePoint-bb020202-0000-4000-8000-000000000014",
+                                                                                           "In":  5,
+                                                                                           "Out":  0.15
+                                                                                       },
+                                                                                       {
+                                                                                           "$NodeId":  "CurvePoint-bb020202-0000-4000-8000-000000000015",
+                                                                                           "In":  8,
+                                                                                           "Out":  -1
+                                                                                       }
+                                                                                   ]
+                                                                    },
+                                                  "WeightedProps":  [
+                                                                        {
+                                                                            "$NodeId":  "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000020",
+                                                                            "Weight":  1,
+                                                                            "ColumnProp":  {
+                                                                                               "$NodeId":  "Column.Prop-bb020202-0000-4000-8000-000000000021",
+                                                                                               "Type":  "Column",
+                                                                                               "Skip":  false,
+                                                                                               "ColumnBlocks":  [
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000022",
+                                                                                                                        "Y":  0,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000023",
+                                                                                                                                         "Solid":  "Rubble_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000024",
+                                                                                                                        "Y":  -1,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000025",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000026",
+                                                                                                                        "Y":  -2,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000027",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000028",
+                                                                                                                        "Y":  -3,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000029",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                               "Directionality":  {
+                                                                                                                      "$NodeId":  "Imported.Directionality-bb020202-0000-4000-8000-000000000030",
+                                                                                                                      "Type":  "Imported",
+                                                                                                                      "Name":  "lumd"
+                                                                                                                  },
+                                                                                               "Scanner":  {
+                                                                                                               "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-000000000031",
+                                                                                                               "Type":  "Imported",
+                                                                                                               "Skip":  false,
+                                                                                                               "Name":  "lums"
+                                                                                                           }
+                                                                                           }
+                                                                        },
+                                                                        {
+                                                                            "$NodeId":  "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000040",
+                                                                            "Weight":  1,
+                                                                            "ColumnProp":  {
+                                                                                               "$NodeId":  "Column.Prop-bb020202-0000-4000-8000-000000000041",
+                                                                                               "Type":  "Column",
+                                                                                               "Skip":  false,
+                                                                                               "ColumnBlocks":  [
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000042",
+                                                                                                                        "Y":  0,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000043",
+                                                                                                                                         "Solid":  "Rubble_Quartzite_Medium",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000044",
+                                                                                                                        "Y":  -1,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000045",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000046",
+                                                                                                                        "Y":  -2,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000047",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                               "Directionality":  {
+                                                                                                                      "$NodeId":  "Imported.Directionality-bb020202-0000-4000-8000-000000000048",
+                                                                                                                      "Type":  "Imported",
+                                                                                                                      "Name":  "lumd"
+                                                                                                                  },
+                                                                                               "Scanner":  {
+                                                                                                               "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-000000000049",
+                                                                                                               "Type":  "Imported",
+                                                                                                               "Skip":  false,
+                                                                                                               "Name":  "lums"
+                                                                                                           }
+                                                                                           }
+                                                                        },
+                                                                        {
+                                                                            "$NodeId":  "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000050",
+                                                                            "Weight":  2,
+                                                                            "ColumnProp":  {
+                                                                                               "$NodeId":  "Column.Prop-bb020202-0000-4000-8000-000000000051",
+                                                                                               "Type":  "Column",
+                                                                                               "Skip":  false,
+                                                                                               "ColumnBlocks":  [
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000052",
+                                                                                                                        "Y":  -1,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000053",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000054",
+                                                                                                                        "Y":  -2,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000055",
+                                                                                                                                         "Solid":  "Rock_Quartzite",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                               "Directionality":  {
+                                                                                                                      "$NodeId":  "Imported.Directionality-bb020202-0000-4000-8000-000000000056",
+                                                                                                                      "Type":  "Imported",
+                                                                                                                      "Name":  "lumd"
+                                                                                                                  },
+                                                                                               "Scanner":  {
+                                                                                                               "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-000000000057",
+                                                                                                               "Type":  "Imported",
+                                                                                                               "Skip":  false,
+                                                                                                               "Name":  "lums"
+                                                                                                           }
+                                                                                           }
+                                                                        }
+                                                                    ],
+                                                  "Pattern":  {
+                                                                  "$NodeId":  "Imported.Pattern-bb020202-0000-4000-8000-000000000060",
+                                                                  "Type":  "Imported",
+                                                                  "Skip":  false,
+                                                                  "Name":  "lump"
+                                                              },
+                                                  "Scanner":  {
+                                                                  "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-000000000061",
+                                                                  "Type":  "Imported",
+                                                                  "Skip":  false,
+                                                                  "Name":  "lums"
+                                                              }
+                                              },
+                                     "Weight":  3
+                                 },
+                                 {
+                                     "$NodeId":  "Entry.Weighted.Prop-bb020202-0000-4000-8000-000000000070",
+                                     "Skip":  true,
+                                     "Prop":  {
+                                                  "$NodeId":  "Cluster.Prop-bb020202-0000-4000-8000-000000000071",
+                                                  "Type":  "Cluster",
+                                                  "Skip":  false,
+                                                  "Range":  8,
+                                                  "Seed":  "Lumi-B",
+                                                  "DistanceCurve":  {
+                                                                        "$NodeId":  "ManualCurve-bb020202-0000-4000-8000-000000000072",
+                                                                        "Type":  "Manual",
+                                                                        "Points":  [
+                                                                                       {
+                                                                                           "$NodeId":  "CurvePoint-bb020202-0000-4000-8000-000000000073",
+                                                                                           "In":  0,
+                                                                                           "Out":  1
+                                                                                       },
+                                                                                       {
+                                                                                           "$NodeId":  "CurvePoint-bb020202-0000-4000-8000-000000000075",
+                                                                                           "In":  8,
+                                                                                           "Out":  -1
+                                                                                       },
+                                                                                       {
+                                                                                           "$NodeId":  "CurvePoint-bb020202-0000-4000-8000-000000000074",
+                                                                                           "In":  5,
+                                                                                           "Out":  0.1
+                                                                                       }
+                                                                                   ]
+                                                                    },
+                                                  "WeightedProps":  [
+                                                                        {
+                                                                            "$NodeId":  "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000090",
+                                                                            "Weight":  0.3,
+                                                                            "ColumnProp":  {
+                                                                                               "$NodeId":  "Column.Prop-bb020202-0000-4000-8000-000000000091",
+                                                                                               "Type":  "Column",
+                                                                                               "Skip":  false,
+                                                                                               "ColumnBlocks":  [
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-000000000092",
+                                                                                                                        "Y":  0,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-000000000093",
+                                                                                                                                         "Solid":  "Plant_Crop_Mushroom_Glowing_Red",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                               "Directionality":  {
+                                                                                                                      "$NodeId":  "Imported.Directionality-bb020202-0000-4000-8000-000000000094",
+                                                                                                                      "Type":  "Imported",
+                                                                                                                      "Name":  "lumd"
+                                                                                                                  },
+                                                                                               "Scanner":  {
+                                                                                                               "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-000000000095",
+                                                                                                               "Type":  "Imported",
+                                                                                                               "Skip":  false,
+                                                                                                               "Name":  "lums"
+                                                                                                           }
+                                                                                           }
+                                                                        },
+                                                                        {
+                                                                            "$NodeId":  "Weighted.Cluster.Prop-bb020202-0000-4000-8000-0000000000b0",
+                                                                            "Weight":  0.3,
+                                                                            "ColumnProp":  {
+                                                                                               "$NodeId":  "Column.Prop-bb020202-0000-4000-8000-0000000000b1",
+                                                                                               "Type":  "Column",
+                                                                                               "Skip":  false,
+                                                                                               "ColumnBlocks":  [
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-0000000000b2",
+                                                                                                                        "Y":  0,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-0000000000b3",
+                                                                                                                                         "Solid":  "Plant_Crop_Mushroom_Glowing_Red",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                               "Directionality":  {
+                                                                                                                      "$NodeId":  "Imported.Directionality-bb020202-0000-4000-8000-0000000000b4",
+                                                                                                                      "Type":  "Imported",
+                                                                                                                      "Name":  "lumd"
+                                                                                                                  },
+                                                                                               "Scanner":  {
+                                                                                                               "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-0000000000b5",
+                                                                                                               "Type":  "Imported",
+                                                                                                               "Skip":  false,
+                                                                                                               "Name":  "lums"
+                                                                                                           }
+                                                                                           }
+                                                                        }
+                                                                        ,
+                                                                        {
+                                                                            "$NodeId":  "Weighted.Cluster.Prop-bb020202-0000-4000-8000-0000000000e0",
+                                                                            "Weight":  1,
+                                                                            "ColumnProp":  {
+                                                                                               "$NodeId":  "Column.Prop-bb020202-0000-4000-8000-0000000000e1",
+                                                                                               "Type":  "Column",
+                                                                                               "Skip":  false,
+                                                                                               "ColumnBlocks":  [
+                                                                                                                    {
+                                                                                                                        "$NodeId":  "Block.Column.Prop-bb020202-0000-4000-8000-0000000000e2",
+                                                                                                                        "Y":  0,
+                                                                                                                        "Material":  {
+                                                                                                                                         "$NodeId":  "Material-bb020202-0000-4000-8000-0000000000e3",
+                                                                                                                                         "Solid":  "Plant_Bush_Arid",
+                                                                                                                                         "SolidBottomUp":  false
+                                                                                                                                     }
+                                                                                                                    }
+                                                                                                                ],
+                                                                                               "Directionality":  {
+                                                                                                                      "$NodeId":  "Imported.Directionality-bb020202-0000-4000-8000-0000000000e4",
+                                                                                                                      "Type":  "Imported",
+                                                                                                                      "Name":  "lumd"
+                                                                                                                  },
+                                                                                               "Scanner":  {
+                                                                                                               "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-0000000000e5",
+                                                                                                               "Type":  "Imported",
+                                                                                                               "Skip":  false,
+                                                                                                               "Name":  "lums"
+                                                                                                           }
+                                                                                           }
+                                                                        }
+                                                                    ],
+                                                  "Pattern":  {
+                                                                  "$NodeId":  "Imported.Pattern-bb020202-0000-4000-8000-000000000096",
+                                                                  "Type":  "Imported",
+                                                                  "Skip":  false,
+                                                                  "Name":  "lump"
+                                                              },
+                                                  "Scanner":  {
+                                                                  "$NodeId":  "Imported.Scanner-bb020202-0000-4000-8000-000000000097",
+                                                                  "Type":  "Imported",
+                                                                  "Skip":  false,
+                                                                  "Name":  "lums"
+                                                              }
+                                              },
+                                     "Weight":  2
+                                 }
+                             ]
+             },
+    "$NodeEditorMetadata":  {
+                                "$Nodes":  {
+                                               "Constant.Assignments-bb020202-0000-4000-8000-000000000001":  {
+                                                                                                                 "$Position":  {
+                                                                                                                                   "$x":  9902,
+                                                                                                                                   "$y":  20
+                                                                                                                               },
+                                                                                                                 "$Title":  "[ROOT] Constant Assignments"
+                                                                                                             },
+                                               "Weighted.Prop-bb020202-0000-4000-8000-000000000002":  {
+                                                                                                          "$Position":  {
+                                                                                                                            "$x":  10785,
+                                                                                                                            "$y":  -3329
+                                                                                                                        }
+                                                                                                      },
+                                               "Entry.Weighted.Prop-bb020202-0000-4000-8000-000000000010":  {
+                                                                                                                "$Position":  {
+                                                                                                                                  "$x":  11684,
+                                                                                                                                  "$y":  -6642
+                                                                                                                              }
+                                                                                                            },
+                                               "Cluster.Prop-bb020202-0000-4000-8000-000000000011":  {
+                                                                                                         "$Position":  {
+                                                                                                                           "$x":  12393,
+                                                                                                                           "$y":  -8703
+                                                                                                                       }
+                                                                                                     },
+                                               "ManualCurve-bb020202-0000-4000-8000-000000000012":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  13349,
+                                                                                                                          "$y":  -10707
+                                                                                                                      }
+                                                                                                    },
+                                               "CurvePoint-bb020202-0000-4000-8000-000000000013":  {
+                                                                                                       "$Position":  {
+                                                                                                                         "$x":  14243,
+                                                                                                                         "$y":  -10926
+                                                                                                                     }
+                                                                                                   },
+                                               "CurvePoint-bb020202-0000-4000-8000-000000000014":  {
+                                                                                                       "$Position":  {
+                                                                                                                         "$x":  14243,
+                                                                                                                         "$y":  -10706
+                                                                                                                     }
+                                                                                                   },
+                                               "CurvePoint-bb020202-0000-4000-8000-000000000015":  {
+                                                                                                       "$Position":  {
+                                                                                                                         "$x":  14243,
+                                                                                                                         "$y":  -10485
+                                                                                                                     }
+                                                                                                   },
+                                               "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000020":  {
+                                                                                                                  "$Position":  {
+                                                                                                                                    "$x":  13349,
+                                                                                                                                    "$y":  -10044
+                                                                                                                                }
+                                                                                                              },
+                                               "Column.Prop-bb020202-0000-4000-8000-000000000021":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  14243,
+                                                                                                                          "$y":  -10264
+                                                                                                                      }
+                                                                                                    },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000022":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -10758
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000023":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -10776
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000024":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -10537
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000025":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -10555
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000026":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -10316
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000027":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -10334
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000028":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -10095
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000029":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -10113
+                                                                                                                   }
+                                                                                                 },
+                                               "Imported.Directionality-bb020202-0000-4000-8000-000000000030":  {
+                                                                                                                    "$Position":  {
+                                                                                                                                      "$x":  15192,
+                                                                                                                                      "$y":  -9874
+                                                                                                                                  }
+                                                                                                                },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000031":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  15192,
+                                                                                                                               "$y":  -9690
+                                                                                                                           }
+                                                                                                         },
+                                               "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000040":  {
+                                                                                                                  "$Position":  {
+                                                                                                                                    "$x":  13349,
+                                                                                                                                    "$y":  -8755
+                                                                                                                                }
+                                                                                                              },
+                                               "Column.Prop-bb020202-0000-4000-8000-000000000041":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  14243,
+                                                                                                                          "$y":  -9197
+                                                                                                                      }
+                                                                                                    },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000042":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -9469
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000043":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -9488
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000044":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -9285
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000045":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -9267
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000046":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -9102
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000047":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -9046
+                                                                                                                   }
+                                                                                                 },
+                                               "Imported.Directionality-bb020202-0000-4000-8000-000000000048":  {
+                                                                                                                    "$Position":  {
+                                                                                                                                      "$x":  15192,
+                                                                                                                                      "$y":  -8918
+                                                                                                                                  }
+                                                                                                                },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000049":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  15192,
+                                                                                                                               "$y":  -8734
+                                                                                                                           }
+                                                                                                         },
+                                               "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000050":  {
+                                                                                                                  "$Position":  {
+                                                                                                                                    "$x":  13349,
+                                                                                                                                    "$y":  -7688
+                                                                                                                                }
+                                                                                                              },
+                                               "Column.Prop-bb020202-0000-4000-8000-000000000051":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  14243,
+                                                                                                                          "$y":  -8019
+                                                                                                                      }
+                                                                                                    },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000052":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -8292
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000053":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -8311
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000054":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -8071
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000055":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -8090
+                                                                                                                   }
+                                                                                                 },
+                                               "Imported.Directionality-bb020202-0000-4000-8000-000000000056":  {
+                                                                                                                    "$Position":  {
+                                                                                                                                      "$x":  15192,
+                                                                                                                                      "$y":  -7850
+                                                                                                                                  }
+                                                                                                                },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000057":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  15192,
+                                                                                                                               "$y":  -7667
+                                                                                                                           }
+                                                                                                         },
+                                               "Imported.Pattern-bb020202-0000-4000-8000-000000000060":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  13349,
+                                                                                                                               "$y":  -6841
+                                                                                                                           }
+                                                                                                         },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000061":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  13349,
+                                                                                                                               "$y":  -6620
+                                                                                                                           }
+                                                                                                         },
+                                               "Entry.Weighted.Prop-bb020202-0000-4000-8000-000000000070":  {
+                                                                                                                "$Position":  {
+                                                                                                                                  "$x":  11684,
+                                                                                                                                  "$y":  -2335
+                                                                                                                              }
+                                                                                                            },
+                                               "Cluster.Prop-bb020202-0000-4000-8000-000000000071":  {
+                                                                                                         "$Position":  {
+                                                                                                                           "$x":  12393,
+                                                                                                                           "$y":  -3531
+                                                                                                                       }
+                                                                                                     },
+                                               "ManualCurve-bb020202-0000-4000-8000-000000000072":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  13349,
+                                                                                                                          "$y":  -4669
+                                                                                                                      }
+                                                                                                    },
+                                               "CurvePoint-bb020202-0000-4000-8000-000000000073":  {
+                                                                                                       "$Position":  {
+                                                                                                                         "$x":  14243,
+                                                                                                                         "$y":  -4889
+                                                                                                                     }
+                                                                                                   },
+                                               "CurvePoint-bb020202-0000-4000-8000-000000000075":  {
+                                                                                                       "$Position":  {
+                                                                                                                         "$x":  14243,
+                                                                                                                         "$y":  -4668
+                                                                                                                     }
+                                                                                                   },
+                                               "CurvePoint-bb020202-0000-4000-8000-000000000074":  {
+                                                                                                       "$Position":  {
+                                                                                                                         "$x":  14243,
+                                                                                                                         "$y":  -4447
+                                                                                                                     }
+                                                                                                   },
+                                               "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000090":  {
+                                                                                                                  "$Position":  {
+                                                                                                                                    "$x":  13349,
+                                                                                                                                    "$y":  -4007
+                                                                                                                                }
+                                                                                                              },
+                                               "Column.Prop-bb020202-0000-4000-8000-000000000091":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  14243,
+                                                                                                                          "$y":  -4227
+                                                                                                                      }
+                                                                                                    },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000092":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -4389
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000093":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -4408
+                                                                                                                   }
+                                                                                                 },
+                                               "Imported.Directionality-bb020202-0000-4000-8000-000000000094":  {
+                                                                                                                    "$Position":  {
+                                                                                                                                      "$x":  15192,
+                                                                                                                                      "$y":  -4168
+                                                                                                                                  }
+                                                                                                                },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000095":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  15192,
+                                                                                                                               "$y":  -3984
+                                                                                                                           }
+                                                                                                         },
+                                               "Weighted.Cluster.Prop-bb020202-0000-4000-8000-000000000080":  {
+                                                                                                                  "$Position":  {
+                                                                                                                                    "$x":  13349,
+                                                                                                                                    "$y":  -3381
+                                                                                                                                }
+                                                                                                              },
+                                               "Column.Prop-bb020202-0000-4000-8000-000000000081":  {
+                                                                                                        "$Position":  {
+                                                                                                                          "$x":  14243,
+                                                                                                                          "$y":  -3712
+                                                                                                                      }
+                                                                                                    },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000082":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -3763
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000083":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -3782
+                                                                                                                   }
+                                                                                                 },
+                                               "Block.Column.Prop-bb020202-0000-4000-8000-000000000084":  {
+                                                                                                              "$Position":  {
+                                                                                                                                "$x":  15192,
+                                                                                                                                "$y":  -3580
+                                                                                                                            }
+                                                                                                          },
+                                               "Material-bb020202-0000-4000-8000-000000000085":  {
+                                                                                                     "$Position":  {
+                                                                                                                       "$x":  16019,
+                                                                                                                       "$y":  -3561
+                                                                                                                   }
+                                                                                                 },
+                                               "Imported.Directionality-bb020202-0000-4000-8000-000000000086":  {
+                                                                                                                    "$Position":  {
+                                                                                                                                      "$x":  15192,
+                                                                                                                                      "$y":  -3396
+                                                                                                                                  }
+                                                                                                                },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000087":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  15192,
+                                                                                                                               "$y":  -3212
+                                                                                                                           }
+                                                                                                         },
+                                               "Imported.Pattern-bb020202-0000-4000-8000-000000000096":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  13349,
+                                                                                                                               "$y":  -2534
+                                                                                                                           }
+                                                                                                         },
+                                               "Imported.Scanner-bb020202-0000-4000-8000-000000000097":  {
+                                                                                                             "$Position":  {
+                                                                                                                               "$x":  13349,
+                                                                                                                               "$y":  -2313
+                                                                                                                           }
+                                                                                                         }
+                                           },
+                                "$FloatingNodes":  [
+
+                                                   ],
+                                "$Links":  {
+
+                                           },
+                                "$Groups":  [
+                                                {
+                                                    "$Position":  {
+                                                                      "$x":  8952,
+                                                                      "$y":  -11549.4375
+                                                                  },
+                                                    "$width":  9000,
+                                                    "$height":  12824.5,
+                                                    "$name":  "Crystal Props"
+                                                }
+                                            ],
+                                "$Comments":  [
+
+                                              ],
+                                "$WorkspaceID":  "HytaleGenerator - Assignments"
+                            }
+}

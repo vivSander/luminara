@@ -1,0 +1,45 @@
+## Adoa's Luminara Biomes - Server Language File (en-US)
+
+## World / Biome Names
+biome.Luminara=Luminara
+biome.Luminara_Bloom=Luminara Bloom
+biome.Luminara_Camphor=Luminara Camphor
+biome.Luminara_Crystal=Luminara Crystal
+biome.Luminara_Deep=Luminara Deep
+biome.Luminara_Dunes=Luminara Dunes
+biome.Luminara_Pink=Luminara Pink
+biome.Luminara_Red=Luminara Red
+biome.Luminara_Plains=Luminara Plains
+biome.Luminara_Stream=Luminara Crystal Stream
+biome.Luminara_Shore=Luminara Shore
+biome.Luminara_Sea=Luminara Sea
+biome.Luminara_Basic=Luminara
+
+## Weather
+weather.Luminara=Luminara
+weather.Luminara_Sea=Luminara Sea
+weather.Luminara_Shore=Luminara Shore
+
+## Environment
+environment.Env_Luminara=Luminara
+environment.Env_Luminara_Red=Luminara Red
+environment.Env_Luminara_Sea=Luminara Sea
+environment.Env_Luminara_Shore=Luminara Shore
+
+## Portal
+items.PortalKey_Luminara.name=Portal: Luminara
+items.PortalKey_Luminara.description=A portal platform that opens a gateway to Luminara, the realm of Adoa.
+items.PortalKey_Luminara_Red.name=Portal: Luminara Red
+items.PortalKey_Luminara_Red.description=A portal platform that opens a gateway to Luminara Red, a world bathed in crimson light.
+items.Hub_Portal_Luminara_Return.name=Portal: Return Home
+items.Hub_Portal_Luminara_Return.description=A portal platform that returns you to the default world.
+items.Hub_Portal_Luminara_Red_Return.name=Portal: Return Home
+items.Hub_Portal_Luminara_Red_Return.description=A portal platform that returns you to the default world.
+portals.luminara=Luminara
+portals.luminara.description=A world of crystal plains, deep luminous jungle, and teal crystal streams. Said to be the realm of Adoa, where ancient crystals grow as tall as trees.
+portals.luminara_red=Luminara Red
+portals.luminara_red.description=A crimson-suffused realm where every horizon glows red.
+
+## World Description
+world.luminara.description=A world of crystal plains, deep luminous jungle, and teal crystal streams. Said to be the realm of Adoa, where ancient crystals grow as tall as trees.
+world.luminara_red.description=A crimson-suffused realm where every horizon glows red.

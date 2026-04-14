@@ -1,0 +1,545 @@
+{
+	"$NodeId":	"Constant.Assignments-aa010101-0000-4000-8000-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Grasses",
+	"Prop":	{
+		"$NodeId":	"Union.Prop-aa010101-0000-4000-8000-000000000002",
+		"Type":	"Union",
+		"Skip":	false,
+		"Props":	[{
+				"$NodeId":	"Weighted.Prop-aa010101-0000-4000-8000-000000000003",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000071",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa010101-0000-4000-8000-000000000072",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa010101-0000-4000-8000-000000000073",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa010101-0000-4000-8000-000000000074",
+										"Solid":	"Rubble_Quartzite",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-aa010101-0000-4000-8000-000000000075",
+								"Type":	"Random",
+								"Seed":	"Lumi-B",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-aa010101-0000-4000-8000-000000000076",
+									"Type":	"Floor",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-aa010101-0000-4000-8000-000000000077",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-aa010101-0000-4000-8000-000000000078",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockType.Pattern-aa010101-0000-4000-8000-000000000079",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-aa010101-0000-4000-8000-00000000007a",
+											"Solid":	"Rock_Lime_Cobble",
+											"SolidBottomUp":	false
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa010101-0000-4000-8000-00000000007b",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000120",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa010101-0000-4000-8000-000000000121",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa010101-0000-4000-8000-000000000122",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa010101-0000-4000-8000-000000000123",
+										"Solid":	"Rubble_Marble",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa010101-0000-4000-8000-000000000124",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa010101-0000-4000-8000-000000000125",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000130",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa010101-0000-4000-8000-000000000131",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa010101-0000-4000-8000-000000000132",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa010101-0000-4000-8000-000000000133",
+										"Solid":	"Wood_Sticks",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa010101-0000-4000-8000-000000000134",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa010101-0000-4000-8000-000000000135",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000040",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa010101-0000-4000-8000-000000000041",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa010101-0000-4000-8000-000000000042",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa010101-0000-4000-8000-000000000043",
+										"Solid":	"Plant_Grass_Sharp_Tall",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa010101-0000-4000-8000-000000000044",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa010101-0000-4000-8000-000000000045",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	20
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000010",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa010101-0000-4000-8000-000000000011",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa010101-0000-4000-8000-000000000012",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa010101-0000-4000-8000-000000000013",
+										"Solid":	"Plant_Grass_Sharp",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-aa010101-0000-4000-8000-000000000020",
+								"Type":	"Random",
+								"ExportAs":	"lumd",
+								"Seed":	"Lumi-A",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-aa010101-0000-4000-8000-000000000021",
+									"Type":	"Floor",
+									"ExportAs":	"lump",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-aa010101-0000-4000-8000-000000000022",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-aa010101-0000-4000-8000-000000000023",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-aa010101-0000-4000-8000-000000000024",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-aa010101-0000-4000-8000-000000000025",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-aa010101-0000-4000-8000-000000000026",
+													"Solid":	"Soil_Grass",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-aa010101-0000-4000-8000-000000000027",
+													"Solid":	"Soil_Grass_Dry",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-aa010101-0000-4000-8000-000000000028",
+													"Solid":	"Soil_Dirt_Poisoned",
+													"SolidBottomUp":	false
+												}]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-aa010101-0000-4000-8000-000000000030",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lums",
+								"Skip":	false,
+								"MaxY":	70,
+								"MinY":	-3,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Base",
+								"TopDownOrder":	true,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	20
+					}, {
+					"$NodeId":	"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000080",
+					"Skip":	true,
+					"Prop":	{
+							"$NodeId":	"Column.Prop-aa010101-0000-4000-8000-000000000081",
+							"Type":	"Column",
+							"Skip":	true,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa010101-0000-4000-8000-000000000082",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa010101-0000-4000-8000-000000000083",
+											"Solid":	"Plant_Bush_Arid",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa010101-0000-4000-8000-000000000084",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa010101-0000-4000-8000-000000000085",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+					"Weight":	6
+				}]
+			}]
+	},
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Constant.Assignments-aa010101-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	9105,
+					"$y":	1716
+				},
+				"$Title":	"[ROOT] Constant Assignments"
+			},
+			"Union.Prop-aa010101-0000-4000-8000-000000000002":	{
+				"$Position":	{
+					"$x":	9803,
+					"$y":	1715
+				}
+			},
+			"Weighted.Prop-aa010101-0000-4000-8000-000000000003":	{
+				"$Position":	{
+					"$x":	10498,
+					"$y":	1717
+				}
+			},
+			"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000010":	{
+				"$Position":	{
+					"$x":	11263,
+					"$y":	2081
+				}
+			},
+			"Column.Prop-aa010101-0000-4000-8000-000000000011":	{
+				"$Position":	{
+					"$x":	11892,
+					"$y":	2204
+				}
+			},
+			"Block.Column.Prop-aa010101-0000-4000-8000-000000000012":	{
+				"$Position":	{
+					"$x":	13553,
+					"$y":	2207
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000013":	{
+				"$Position":	{
+					"$x":	14022,
+					"$y":	2197
+				}
+			},
+			"Random.Directionality-aa010101-0000-4000-8000-000000000020":	{
+				"$Position":	{
+					"$x":	12979,
+					"$y":	2319
+				}
+			},
+			"Floor.Pattern-aa010101-0000-4000-8000-000000000021":	{
+				"$Position":	{
+					"$x":	13680,
+					"$y":	2327
+				}
+			},
+			"BlockType.Pattern-aa010101-0000-4000-8000-000000000022":	{
+				"$Position":	{
+					"$x":	14396,
+					"$y":	2324
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000023":	{
+				"$Position":	{
+					"$x":	15081,
+					"$y":	2323
+				}
+			},
+			"BlockSet.Pattern-aa010101-0000-4000-8000-000000000024":	{
+				"$Position":	{
+					"$x":	14400,
+					"$y":	2506
+				}
+			},
+			"BlockSet.BlockMask-aa010101-0000-4000-8000-000000000025":	{
+				"$Position":	{
+					"$x":	15065,
+					"$y":	2506
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000026":	{
+				"$Position":	{
+					"$x":	15616,
+					"$y":	2503
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000027":	{
+				"$Position":	{
+					"$x":	15621,
+					"$y":	2677
+				}
+			},
+			"ColumnLinear.Scanner-aa010101-0000-4000-8000-000000000030":	{
+				"$Position":	{
+					"$x":	12973,
+					"$y":	2475
+				}
+			},
+			"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000040":	{
+				"$Position":	{
+					"$x":	11265,
+					"$y":	1897
+				}
+			},
+			"Column.Prop-aa010101-0000-4000-8000-000000000041":	{
+				"$Position":	{
+					"$x":	11896,
+					"$y":	1932
+				}
+			},
+			"Block.Column.Prop-aa010101-0000-4000-8000-000000000042":	{
+				"$Position":	{
+					"$x":	13552,
+					"$y":	1924
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000043":	{
+				"$Position":	{
+					"$x":	14012,
+					"$y":	1924
+				}
+			},
+			"Imported.Directionality-aa010101-0000-4000-8000-000000000044":	{
+				"$Position":	{
+					"$x":	12976,
+					"$y":	2011
+				}
+			},
+			"Imported.Scanner-aa010101-0000-4000-8000-000000000045":	{
+				"$Position":	{
+					"$x":	12975,
+					"$y":	2110
+				}
+			},
+			"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000050":	{
+				"$Position":	{
+					"$x":	11264,
+					"$y":	1721
+				}
+			},
+			"Column.Prop-aa010101-0000-4000-8000-000000000051":	{
+				"$Position":	{
+					"$x":	11895,
+					"$y":	1666
+				}
+			},
+			"Block.Column.Prop-aa010101-0000-4000-8000-000000000052":	{
+				"$Position":	{
+					"$x":	13554,
+					"$y":	1654
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000053":	{
+				"$Position":	{
+					"$x":	14016,
+					"$y":	1654
+				}
+			},
+			"Imported.Directionality-aa010101-0000-4000-8000-000000000054":	{
+				"$Position":	{
+					"$x":	12973,
+					"$y":	1733
+				}
+			},
+			"Imported.Scanner-aa010101-0000-4000-8000-000000000055":	{
+				"$Position":	{
+					"$x":	12974,
+					"$y":	1842
+				}
+			},
+			"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000060":	{
+				"$Position":	{
+					"$x":	11259,
+					"$y":	1550
+				}
+			},
+			"Column.Prop-aa010101-0000-4000-8000-000000000061":	{
+				"$Position":	{
+					"$x":	11895,
+					"$y":	1393
+				}
+			},
+			"Block.Column.Prop-aa010101-0000-4000-8000-000000000062":	{
+				"$Position":	{
+					"$x":	13552,
+					"$y":	1382
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000063":	{
+				"$Position":	{
+					"$x":	14019,
+					"$y":	1383
+				}
+			},
+			"Imported.Directionality-aa010101-0000-4000-8000-000000000064":	{
+				"$Position":	{
+					"$x":	12968,
+					"$y":	1465
+				}
+			},
+			"Imported.Scanner-aa010101-0000-4000-8000-000000000065":	{
+				"$Position":	{
+					"$x":	12964,
+					"$y":	1577
+				}
+			},
+			"Entry.Weighted.Prop-aa010101-0000-4000-8000-000000000071":	{
+				"$Position":	{
+					"$x":	11249,
+					"$y":	1377
+				}
+			},
+			"Column.Prop-aa010101-0000-4000-8000-000000000072":	{
+				"$Position":	{
+					"$x":	11887,
+					"$y":	1131
+				}
+			},
+			"Block.Column.Prop-aa010101-0000-4000-8000-000000000073":	{
+				"$Position":	{
+					"$x":	12984,
+					"$y":	821
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000074":	{
+				"$Position":	{
+					"$x":	13446,
+					"$y":	817
+				}
+			},
+			"Random.Directionality-aa010101-0000-4000-8000-000000000075":	{
+				"$Position":	{
+					"$x":	12974,
+					"$y":	1143
+				}
+			},
+			"Floor.Pattern-aa010101-0000-4000-8000-000000000076":	{
+				"$Position":	{
+					"$x":	13623,
+					"$y":	1141
+				}
+			},
+			"BlockType.Pattern-aa010101-0000-4000-8000-000000000077":	{
+				"$Position":	{
+					"$x":	14314,
+					"$y":	982
+				}
+			},
+			"Material-aa010101-0000-4000-8000-000000000078":	{
+				"$Position":	{
+					"$x":	14963,
+					"$y":	980
+				}
+			},
+			"BlockType.Pattern-aa010101-0000-4000-8000-000000000079":	{
+				"$Position":	{
+					"$x":	14317,
+					"$y":	1165
+				}
+			},
+			"Material-aa010101-0000-4000-8000-00000000007a":	{
+				"$Position":	{
+					"$x":	14964,
+					"$y":	1164
+				}
+			},
+			"Imported.Scanner-aa010101-0000-4000-8000-00000000007b":	{
+				"$Position":	{
+					"$x":	12970,
+					"$y":	1304
+				}
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{
+		},
+		"$Groups":	[{
+				"$Position":	{
+					"$x":	9010.9375,
+					"$y":	592
+				},
+				"$width":	7810.6875,
+				"$height":	2407.375,
+				"$name":	"Luminara Grasses"
+			}],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Assignments"
+	}
+}
+

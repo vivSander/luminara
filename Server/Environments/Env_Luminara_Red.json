@@ -1,0 +1,36 @@
+{
+  "WaterTint": "#ff1a1a",
+  "SpawnDensity": 1.0,
+  "Tags": {
+    "Zone1": [
+      "Jungle",
+      "Crystal"
+    ]
+  },
+  "WeatherForecasts": {
+    "0": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "1": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "2": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "3": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "4": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "5": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "6": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "7": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "8": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "9": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "10": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "11": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "12": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "13": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "14": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "15": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "16": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "17": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "18": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "19": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "20": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "21": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "22": [{ "WeatherId": "Luminara_Red", "Weight": 40 }],
+    "23": [{ "WeatherId": "Luminara_Red", "Weight": 40 }]
+  }
+}

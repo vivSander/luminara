@@ -1,0 +1,204 @@
+{
+	"$NodeId":	"Constant.Assignments-wf010101-0000-4000-8000-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Waterfalls",
+	"Prop":	{
+		"$NodeId":	"Union.Prop-wf010101-0000-4000-8000-000000000002",
+		"Type":	"Union",
+		"Skip":	false,
+		"Props":	[
+			{
+				"$NodeId":	"Weighted.Prop-wf010101-0000-4000-8000-000000000003",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[
+					{
+						"$NodeId":	"Entry.Weighted.Prop-wf010101-0000-4000-8000-000000000010",
+						"Weight":	10,
+						"Prop":	{
+							"$NodeId":	"Column.Prop-wf010101-0000-4000-8000-000000000011",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000012",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000013",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000014",
+									"Y":	-1,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000015",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000016",
+									"Y":	-2,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000017",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000018",
+									"Y":	-3,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000019",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-00000000001a",
+									"Y":	-4,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-00000000001b",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-00000000001c",
+									"Y":	-5,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-00000000001d",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-00000000001e",
+									"Y":	-6,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-00000000001f",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000020",
+									"Y":	-7,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000021",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000022",
+									"Y":	-8,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000023",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000024",
+									"Y":	-9,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000025",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000026",
+									"Y":	-10,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000027",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-000000000028",
+									"Y":	-11,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-000000000029",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								},
+								{
+									"$NodeId":	"Block.Column.Prop-wf010101-0000-4000-8000-00000000002a",
+									"Y":	-12,
+									"Material":	{
+										"$NodeId":	"Material-wf010101-0000-4000-8000-00000000002b",
+										"Fluid":	"Water_Source",
+										"SolidBottomUp":	false
+									}
+								}
+							],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-wf010101-0000-4000-8000-000000000030",
+								"Type":	"Random",
+								"Seed":	"LumiMountainfalls-Waterfalls",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-wf010101-0000-4000-8000-000000000031",
+									"Type":	"Floor",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-wf010101-0000-4000-8000-000000000032",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-wf010101-0000-4000-8000-000000000033",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-wf010101-0000-4000-8000-000000000034",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-wf010101-0000-4000-8000-000000000035",
+											"Inclusive":	true,
+											"Materials":	[
+												{
+													"$NodeId":	"Material-wf010101-0000-4000-8000-000000000036",
+													"Solid":	"Rock_Stone",
+													"SolidBottomUp":	false
+												},
+												{
+													"$NodeId":	"Material-wf010101-0000-4000-8000-000000000037",
+													"Solid":	"Soil_Grass",
+													"SolidBottomUp":	false
+												},
+												{
+													"$NodeId":	"Material-wf010101-0000-4000-8000-000000000038",
+													"Solid":	"Soil_Grass_Dry",
+													"SolidBottomUp":	false
+												}
+											]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-wf010101-0000-4000-8000-000000000040",
+								"Type":	"ColumnLinear",
+								"Skip":	false,
+								"MaxY":	120,
+								"MinY":	30,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Base",
+								"TopDownOrder":	true,
+								"ResultCap":	1
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

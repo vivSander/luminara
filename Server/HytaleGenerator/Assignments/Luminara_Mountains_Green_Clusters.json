@@ -1,0 +1,131 @@
+{
+	"$NodeId":	"Constant.Assignments-lumi-mg-cluster-0001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Mountains_Green_Clusters",
+	"Prop":	{
+		"$NodeId":	"Weighted.Prop-lumi-mg-cluster-0002",
+		"Type":	"Weighted",
+		"Skip":	false,
+		"Entries":	[{
+				"$NodeId":	"Entry.Weighted.Prop-lumi-mg-cluster-0010",
+				"Prop":	{
+					"$NodeId":	"Cluster.Prop-lumi-mg-cluster-0011",
+					"Type":	"Cluster",
+					"Skip":	false,
+					"Range":	8,
+					"Seed":	"Lumi-MG-Cluster",
+					"DistanceCurve":	{
+						"$NodeId":	"ManualCurve-lumi-mg-cluster-0012",
+						"Type":	"Manual",
+						"Points":	[{
+								"$NodeId":	"CurvePoint-lumi-mg-cluster-0013",
+								"In":	0,
+								"Out":	1
+							}, {
+								"$NodeId":	"CurvePoint-lumi-mg-cluster-0014",
+								"In":	5,
+								"Out":	0.15
+							}, {
+								"$NodeId":	"CurvePoint-lumi-mg-cluster-0015",
+								"In":	8,
+								"Out":	-1
+							}]
+					},
+					"WeightedProps":	[{
+							"$NodeId":	"Weighted.Cluster.Prop-lumi-mg-cluster-0020",
+							"Weight":	1,
+							"ColumnProp":	{
+								"$NodeId":	"Column.Prop-lumi-mg-cluster-0021",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-lumi-mg-cluster-0022",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-lumi-mg-cluster-0023",
+											"Solid":	"Plant_Crop_Pumpkin_Item",
+											"SolidBottomUp":	false
+										}
+									}],
+								"Directionality":	{
+									"$NodeId":	"Random.Directionality-lumi-mg-cluster-0024",
+									"Type":	"Random",
+									"ExportAs":	"lumg-mtn-cl-d",
+									"Seed":	"LumiMtnG-Cl-A",
+									"Pattern":	{
+										"$NodeId":	"Floor.Pattern-lumi-mg-cluster-0025",
+										"Type":	"Floor",
+										"Skip":	false,
+										"Origin":	{
+											"$NodeId":	"BlockType.Pattern-lumi-mg-cluster-0026",
+											"Type":	"BlockType",
+											"Skip":	false,
+											"Material":	{
+												"$NodeId":	"Material-lumi-mg-cluster-0027",
+												"Solid":	"Empty",
+												"SolidBottomUp":	false
+											}
+										},
+										"Floor":	{
+											"$NodeId":	"BlockSet.Pattern-lumi-mg-cluster-0028",
+											"Type":	"BlockSet",
+											"Skip":	false,
+											"BlockSet":	{
+												"$NodeId":	"BlockSet.BlockMask-lumi-mg-cluster-0029",
+												"Inclusive":	true,
+												"Materials":	[{
+														"$NodeId":	"Material-lumi-mg-cluster-002a",
+														"Solid":	"Soil_Grass",
+														"SolidBottomUp":	false
+													}]
+											}
+										}
+									}
+								},
+								"Scanner":	{
+									"$NodeId":	"ColumnLinear.Scanner-lumi-mg-cluster-0030",
+									"Type":	"ColumnLinear",
+									"ExportAs":	"lumg-mtn-cl-s",
+									"Skip":	false,
+									"MaxY":	255,
+									"MinY":	-3,
+									"RelativeToPosition":	false,
+									"BaseHeightName":	"Base",
+									"TopDownOrder":	true,
+									"ResultCap":	1
+								}
+							}
+						}, {
+							"$NodeId":	"Weighted.Cluster.Prop-lumi-mg-cluster-0040",
+							"Weight":	1,
+							"ColumnProp":	{
+								"$NodeId":	"Column.Prop-lumi-mg-cluster-0041",
+								"Type":	"Column",
+								"Skip":	false,
+								"ColumnBlocks":	[{
+										"$NodeId":	"Block.Column.Prop-lumi-mg-cluster-0042",
+										"Y":	0,
+										"Material":	{
+											"$NodeId":	"Material-lumi-mg-cluster-0043",
+											"Solid":	"Plant_Crop_Mushroom_Glowing_Orange",
+											"SolidBottomUp":	false
+										}
+									}],
+								"Directionality":	{
+									"$NodeId":	"Imported.Directionality-lumi-mg-cluster-0044",
+									"Type":	"Imported",
+									"Name":	"lumg-mtn-cl-d"
+								},
+								"Scanner":	{
+									"$NodeId":	"Imported.Scanner-lumi-mg-cluster-0045",
+									"Type":	"Imported",
+									"Skip":	false,
+									"Name":	"lumg-mtn-cl-s"
+								}
+							}
+						}]
+				},
+				"Weight":	1
+			}]
+	}
+}

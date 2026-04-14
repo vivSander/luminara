@@ -1,0 +1,109 @@
+{
+	"$NodeId":	"Constant.Assignments-cc040404-0000-4000-8000-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Calcite_Green",
+	"Prop":	{
+		"$NodeId":	"Weighted.Prop-cc040404-0000-4000-8000-000000000002",
+		"Type":	"Weighted",
+		"Skip":	false,
+		"Entries":	[{
+				"$NodeId":	"Entry.Weighted.Prop-cc040404-0000-4000-8000-000000000010",
+				"Prop":	{
+					"$NodeId":	"Prefab.Prop-cc040404-0000-4000-8000-000000000011",
+					"Type":	"Prefab",
+					"Skip":	false,
+					"WeightedPrefabPaths":	[{
+							"$NodeId":	"PrefabPath-cc040404-0000-4000-8000-000000000012",
+							"Path":	"Rock_Formations/Rocks/Chalk/Small",
+							"Weight":	30
+						}, {
+							"$NodeId":	"PrefabPath-cc040404-0000-4000-8000-000000000013",
+							"Path":	"Rock_Formations/Rocks/Chalk/Medium",
+							"Weight":	40
+						}, {
+							"$NodeId":	"PrefabPath-cc040404-0000-4000-8000-000000000014",
+							"Path":	"Rock_Formations/Rocks/Chalk/Large",
+							"Weight":	20
+						}, {
+							"$NodeId":	"PrefabPath-cc040404-0000-4000-8000-000000000015",
+							"Path":	"Rock_Formations/Pillars/Marble/Small",
+							"Weight":	20
+						}, {
+							"$NodeId":	"PrefabPath-cc040404-0000-4000-8000-000000000016",
+							"Path":	"Rock_Formations/Pillars/Marble/Large",
+							"Weight":	10
+						}],
+					"LegacyPath":	false,
+					"LoadEntities":	true,
+					"Directionality":	{
+						"$NodeId":	"Random.Directionality-cc040404-0000-4000-8000-000000000020",
+						"Type":	"Random",
+						"Seed":	"LumiCalcite-Dir",
+						"Pattern":	{
+							"$NodeId":	"Floor.Pattern-cc040404-0000-4000-8000-000000000021",
+							"Type":	"Floor",
+							"Skip":	false,
+							"Origin":	{
+								"$NodeId":	"BlockType.Pattern-cc040404-0000-4000-8000-000000000022",
+								"Type":	"BlockType",
+								"Skip":	false,
+								"Material":	{
+									"$NodeId":	"Material-cc040404-0000-4000-8000-000000000023",
+									"Solid":	"Empty",
+									"SolidBottomUp":	false
+								}
+							},
+							"Floor":	{
+								"$NodeId":	"BlockSet.Pattern-cc040404-0000-4000-8000-000000000024",
+								"Type":	"BlockSet",
+								"Skip":	false,
+								"BlockSet":	{
+									"$NodeId":	"BlockSet.BlockMask-cc040404-0000-4000-8000-000000000025",
+									"Inclusive":	true,
+									"Materials":	[{
+											"$NodeId":	"Material-cc040404-0000-4000-8000-000000000026",
+											"Solid":	"Soil_Grass",
+											"SolidBottomUp":	false
+										}, {
+											"$NodeId":	"Material-cc040404-0000-4000-8000-000000000027",
+											"Solid":	"Soil_Grass_Deep",
+											"SolidBottomUp":	false
+										}]
+								}
+							}
+						}
+					},
+					"Scanner":	{
+						"$NodeId":	"ColumnLinear.Scanner-cc040404-0000-4000-8000-000000000030",
+						"Type":	"ColumnLinear",
+						"Skip":	false,
+						"MaxY":	80,
+						"MinY":	0,
+						"RelativeToPosition":	false,
+						"BaseHeightName":	"Base",
+						"TopDownOrder":	true,
+						"ResultCap":	1
+					},
+					"MoldingDirection":	"None",
+					"MoldingChildren":	false
+				},
+				"Weight":	1
+			}]
+	},
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Constant.Assignments-cc040404-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	9900,
+					"$y":	20
+				},
+				"$Title":	"[ROOT] Constant Assignments"
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Assignments"
+	}
+}

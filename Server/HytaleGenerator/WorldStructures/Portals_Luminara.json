@@ -1,0 +1,112 @@
+{
+  "Type": "NoiseRange",
+  "Biomes": [
+    {
+      "Biome": "Luminara_Camphor",
+      "Min": -1.0,
+      "Max": -0.7143
+    },
+    {
+      "Biome": "Luminara_Mountains_Green",
+      "Min": -0.7143,
+      "Max": -0.4286
+    },
+    {
+      "Biome": "Luminara_Plains_Green",
+      "Min": -0.4286,
+      "Max": -0.1429
+    },
+    {
+      "Biome": "Luminara_Highlands",
+      "Min": -0.1429,
+      "Max": 0.1429
+    },
+    {
+      "Biome": "Luminara_Mountainfalls",
+      "Min": 0.1429,
+      "Max": 0.4286
+    },
+    {
+      "Biome": "Luminara_Pink_Edge",
+      "Min": 0.4286,
+      "Max": 0.7143
+    },
+    {
+      "Biome": "Luminara_Sea",
+      "Min": 0.7143,
+      "Max": 1.0
+    },
+    {
+      "Biome": "Luminara_Pink_Edge",
+      "Min": 1.0,
+      "Max": 1.5
+    }
+
+  ],
+  "DefaultBiome": "Luminara_Highlands",
+  "DefaultTransitionDistance": 64,
+  "MaxBiomeEdgeDistance": 64,
+  "ContentFields": [
+    {
+      "Type": "BaseHeight",
+      "Name": "Base",
+      "Y": 100
+    },
+    {
+      "Type": "BaseHeight",
+      "Name": "Water",
+      "Y": 100
+    },
+    {
+      "Type": "BaseHeight",
+      "Name": "Bedrock",
+      "Y": 0
+    }
+  ],
+  "Density": {
+    "Type": "Imported",
+    "Name": "Biome-Map"
+  },
+  "SpawnPositions": {
+    "Type": "Imported",
+    "Name": "Portals-Luminara-Spawns"
+  },
+  "Framework": [
+    {
+      "Type": "Positions",
+      "Entries": [
+        {
+          "Name": "Spawns",
+          "Positions": {
+            "Type": "List",
+            "ExportAs": "Portals-Luminara-Spawns",
+            "Positions": [
+              {
+                "X": 0,
+                "Y": 160,
+                "Z": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Type": "DecimalConstants",
+      "Entries": [
+        {
+          "Name": "Base",
+          "Value": 100
+        },
+        {
+          "Name": "Water",
+          "Value": 100
+        },
+        {
+          "Name": "Bedrock",
+          "Value": 0
+        }
+      ]
+    }
+  ]
+}

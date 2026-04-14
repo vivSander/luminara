@@ -1,0 +1,122 @@
+{
+	"$NodeId": "Constant.Assignments-bb020202-0000-4000-8000-000000000001",
+	"Type": "Constant",
+	"ExportAs": "Luminara_Rubble_Pink",
+	"Prop": {
+		"$NodeId": "Weighted.Prop-bb020202-0000-4000-8000-000000000002",
+		"Type": "Weighted",
+		"Skip": false,
+		"Entries": [
+			{
+				"$NodeId": "Entry.Weighted.Prop-bb020202-0000-4000-8000-000000000010",
+				"Prop": {
+					"$NodeId": "Column.Prop-bb020202-0000-4000-8000-000000000011",
+					"Type": "Column",
+					"Skip": false,
+					"ColumnBlocks": [
+						{
+							"$NodeId": "Block.Column.Prop-bb020202-0000-4000-8000-000000000012",
+							"Y": 0,
+							"Material": {
+								"$NodeId": "Material-bb020202-0000-4000-8000-000000000013",
+								"Solid": "Rubble_Marble",
+								"SolidBottomUp": false
+							}
+						}
+					],
+					"Directionality": {
+						"$NodeId": "Random.Directionality-bb020202-0000-4000-8000-000000000020",
+						"Type": "Random",
+						"ExportAs": "lumd_rubble_pink",
+						"Seed": "LumiPink-Rubble-Dir",
+						"Pattern": {
+							"$NodeId": "Floor.Pattern-bb020202-0000-4000-8000-000000000021",
+							"Type": "Floor",
+							"Skip": false,
+							"Origin": {
+								"$NodeId": "BlockType.Pattern-bb020202-0000-4000-8000-000000000022",
+								"Type": "BlockType",
+								"Skip": false,
+								"Material": {
+									"$NodeId": "Material-bb020202-0000-4000-8000-000000000023",
+									"Solid": "Empty",
+									"SolidBottomUp": false
+								}
+							},
+							"Floor": {
+								"$NodeId": "BlockSet.Pattern-bb020202-0000-4000-8000-000000000024",
+								"Type": "BlockSet",
+								"Skip": false,
+								"BlockSet": {
+									"$NodeId": "BlockSet.BlockMask-bb020202-0000-4000-8000-000000000025",
+									"Inclusive": true,
+									"Materials": [
+										{
+											"$NodeId": "Material-bb020202-0000-4000-8000-000000000026",
+											"Solid": "Soil_Grass",
+											"SolidBottomUp": false
+										},
+										{
+											"$NodeId": "Material-bb020202-0000-4000-8000-000000000027",
+											"Solid": "Soil_Grass_Dry",
+											"SolidBottomUp": false
+										},
+										{
+											"$NodeId": "Material-bb020202-0000-4000-8000-000000000028",
+											"Solid": "Soil_Dirt",
+											"SolidBottomUp": false
+										}
+									]
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "ColumnLinear.Scanner-bb020202-0000-4000-8000-000000000030",
+						"Type": "ColumnLinear",
+						"ExportAs": "lums_rubble_pink",
+						"Skip": false,
+						"MaxY": 70,
+						"MinY": -3,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					}
+				},
+				"Weight": 1
+			},
+			{
+				"$NodeId": "Entry.Weighted.Prop-bb020202-0000-4000-8000-000000000040",
+				"Prop": {
+					"$NodeId": "Column.Prop-bb020202-0000-4000-8000-000000000041",
+					"Type": "Column",
+					"Skip": false,
+					"ColumnBlocks": [
+						{
+							"$NodeId": "Block.Column.Prop-bb020202-0000-4000-8000-000000000042",
+							"Y": 0,
+							"Material": {
+								"$NodeId": "Material-bb020202-0000-4000-8000-000000000043",
+								"Solid": "Wood_Sticks",
+								"SolidBottomUp": false
+							}
+						}
+					],
+					"Directionality": {
+						"$NodeId": "Imported.Directionality-bb020202-0000-4000-8000-000000000044",
+						"Type": "Imported",
+						"Name": "lumd_rubble_pink"
+					},
+					"Scanner": {
+						"$NodeId": "Imported.Scanner-bb020202-0000-4000-8000-000000000045",
+						"Type": "Imported",
+						"Skip": false,
+						"Name": "lums_rubble_pink"
+					}
+				},
+				"Weight": 1
+			}
+		]
+	}
+}

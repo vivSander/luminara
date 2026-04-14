@@ -1,0 +1,96 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.PortalKey_Luminara_Red.name",
+    "Description": "server.items.PortalKey_Luminara_Red.description"
+  },
+  "Icon": "Icons/ItemsGenerated/PortalKey_Luminara_Red.png",
+  "Categories": [
+    "Blocks.Portals"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Platform_Magic_Exit.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Miscellaneous/Platform_Magic_Blue2.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Pad_Portal",
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Stone",
+    "VariantRotation": "NESW",
+    "Flags": {
+      "IsUsable": false
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Unbreakable"
+      }
+    },
+    "Light": {
+      "Color": "#c00",
+      "Radius": 10
+    },
+    "AmbientSoundEventId": "SFX_Portal_Neutral",
+    "Particles": [
+      {
+        "SystemId": "MagicPortal_Fire",
+        "PositionOffset": {
+          "Y": 3
+        },
+        "Scale": 1,
+        "Color": "#c50000",
+        "RotationOffset": {
+          "Pitch": 0
+        }
+      }
+    ],
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "HubPortal",
+            "WorldName": "luminara_red_world",
+            "InstanceTemplate": "Portals_Luminara_Red",
+            "Next": {
+              "Type": "Simple",
+              "Effects": {
+                "LocalSoundEventId": "SFX_Portal_Neutral_Teleport_Local"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "CustomModelAnimation": "Blocks/Miscellaneous/Platform_Magic_Idle.blockyanim",
+    "ParticleColor": "#d60000",
+    "Tint": [
+      "#960000"
+    ]
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Portal",
+      "HubPortal"
+    ]
+  },
+  "Quality": "Legendary",
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

@@ -1,0 +1,1633 @@
+{
+	"$NodeId":	"Constant.Assignments-cv-new-4layer-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Caves",
+	"Prop":	{
+		"$NodeId":	"Union.Prop-cv-new-4layer-000000000002",
+		"Type":	"Union",
+		"Skip":	false,
+		"Props":	[{
+				"$NodeId":	"Weighted.Prop-cv-ceiling-all-0001",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-001",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-001-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-cv-ceil-dir",
+								"Type":	"Random",
+								"ExportAs":	"lumcvd-ce",
+								"Seed":	"LumiCave-Ceil",
+								"Pattern":	{
+									"$NodeId":	"Ceiling.Pattern-cv-ceil-pat",
+									"Type":	"Ceiling",
+									"ExportAs":	"lumcvp-ce",
+									"Skip":	false,
+									"Ceiling":	{
+										"$NodeId":	"BlockSet.Pattern-cv-ceil-bset",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-cv-ceil-bm",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-cv-ceil-bm01",
+													"Solid":	"Rock_Stone",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-ceil-bm02",
+													"Solid":	"Rock_Calcite",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-ceil-bm03",
+													"Solid":	"Rock_Slate",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-ceil-bm04",
+													"Solid":	"Rock_Basalt",
+													"SolidBottomUp":	false
+												}]
+										}
+									},
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-cv-ceil-ori",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-cv-ceil-ori-mat",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-cv-ceil-scn",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lumcvs-ce",
+								"Skip":	false,
+								"MaxY":	85,
+								"MinY":	5,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Bedrock",
+								"TopDownOrder":	true,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	6
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-vine1",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-vine1-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-vine1-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-vine1-mat",
+										"Solid":	"Plant_Vine",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-vine1",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-vine1",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	6
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-vine2",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-vine2-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-vine2-blk0",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-vine2-mat0",
+										"Solid":	"Plant_Vine",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-cv-ceil-vine2-blk1",
+									"Y":	-1,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-vine2-mat1",
+										"Solid":	"Plant_Vine",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-vine2",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-vine2",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-vine3",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-vine3-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-vine3-blk0",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-vine3-mat0",
+										"Solid":	"Plant_Vine",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-cv-ceil-vine3-blk1",
+									"Y":	-1,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-vine3-mat1",
+										"Solid":	"Plant_Vine",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-cv-ceil-vine3-blk2",
+									"Y":	-2,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-vine3-mat2",
+										"Solid":	"Plant_Vine",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-vine3",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-vine3",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-roots1",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-roots1-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-roots1-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-roots1-mat",
+										"Solid":	"Plant_Roots_Cave",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-roots1",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-roots1",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-roots2",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-roots2-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-roots2-blk0",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-roots2-mat0",
+										"Solid":	"Plant_Roots_Cave",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-cv-ceil-roots2-blk1",
+									"Y":	-1,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-roots2-mat1",
+										"Solid":	"Plant_Roots_Cave",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-roots2",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-roots2",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-swbulbs",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-swbulbs-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-swbulbs-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-swbulbs-mat",
+										"Solid":	"Plant_Seaweed_Bulbs",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-swbulbs",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-swbulbs",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-bushhang",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-bushhang-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-bushhang-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-bushhang-mat",
+										"Solid":	"Plant_Bush_Hanging",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-bushhang",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-bushhang",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-thickroot",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-thickroot-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-thickroot-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-thickroot-mat",
+										"Solid":	"Plant_Vine_Thick_Roots",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-thickroot",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-thickroot",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-009",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-009-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-5dfd70e0-f180-478c-84d0-02d2fbdd9ff6",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-753d428c-75ab-42b8-a433-1a177e3b94fc",
+										"Solid":	"Wood_Aspen_Branch_Long",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-83b483e0-e58b-40e5-a358-f1350231f475",
+									"Y":	-1,
+									"Material":	{
+										"$NodeId":	"Material-42837a5a-a8d5-4b42-b9b6-0185b5eed3ef",
+										"Solid":	"Deco_Rope",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-cv-ceil-009-blk",
+									"Y":	-2,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-009-mat",
+										"Solid":	"Rock_Crystal_Purple_Block",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-009",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-009",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-010",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-010-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-010-blk0",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-010-mat0",
+										"Solid":	"Rock_Crystal_Blue_Block",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-010",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-010",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-ceil-empty",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-ceil-empty-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-ceil-empty-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-ceil-empty-mat",
+										"Solid":	"Empty",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-ceil-empty",
+								"Type":	"Imported",
+								"Name":	"lumcvd-ce"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-ceil-empty",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-ce"
+							}
+						},
+						"Weight":	6
+					}]
+			}, {
+				"$NodeId":	"Weighted.Prop-cv-layer1-floor-0001",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-001",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-001-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-001-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-001-mat",
+										"Solid":	"Plant_Moss_Blue",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-cv-layer1-fl-dir",
+								"Type":	"Random",
+								"ExportAs":	"lumcvd-fl-upper",
+								"Seed":	"LumiCave-Upper",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-cv-layer1-fl-pat",
+									"Type":	"Floor",
+									"ExportAs":	"lumcvp-fl-upper",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-cv-layer1-fl-ori",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-cv-layer1-fl-ori-mat",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-cv-layer1-fl-bset",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-cv-layer1-fl-bm",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-cv-layer1-fl-bm01",
+													"Solid":	"Rock_Calcite",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer1-fl-bm02",
+													"Solid":	"Rock_Stone",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer1-fl-bm03",
+													"Solid":	"Soil_Grass",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer1-fl-bm04",
+													"Solid":	"Plant_Moss_Block_Green_Dark",
+													"SolidBottomUp":	false
+												}]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-cv-layer1-fl-scn",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lumcvs-fl-upper",
+								"Skip":	false,
+								"MaxY":	85,
+								"MinY":	65,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Bedrock",
+								"TopDownOrder":	false,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	5
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-002",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-002-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-002-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-002-mat",
+										"Solid":	"Plant_Fern_Forest",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer1-fl-002",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-upper"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer1-fl-002",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-upper"
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-003",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-003-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-003-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-003-mat",
+										"Solid":	"Plant_Grass_Sharp",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer1-fl-003",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-upper"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer1-fl-003",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-upper"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-004",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-004-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-004-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-004-mat",
+										"Solid":	"Plant_Grass_Overgrown",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer1-fl-004",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-upper"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer1-fl-004",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-upper"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-005",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-005-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-005-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-005-mat",
+										"Solid":	"Plant_Vine_Rug",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer1-fl-005",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-upper"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer1-fl-005",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-upper"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-006",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-006-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-006-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-006-mat",
+										"Solid":	"Rock_Lime_Cobble",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer1-fl-006",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-upper"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer1-fl-006",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-upper"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer1-fl-empty",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer1-fl-empty-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer1-fl-empty-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer1-fl-empty-mat",
+										"Solid":	"Empty",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer1-fl-empty",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-upper"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer1-fl-empty",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-upper"
+							}
+						},
+						"Weight":	6
+					}]
+			}, {
+				"$NodeId":	"Weighted.Prop-cv-layer2-floor-0001",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-001",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-001-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-001-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-001-mat",
+										"Solid":	"Plant_Seaweed_Grass_Bulbs",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-cv-layer2-fl-dir",
+								"Type":	"Random",
+								"ExportAs":	"lumcvd-fl-midup",
+								"Seed":	"LumiCave-MidUp",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-cv-layer2-fl-pat",
+									"Type":	"Floor",
+									"ExportAs":	"lumcvp-fl-midup",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-cv-layer2-fl-ori",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-cv-layer2-fl-ori-mat",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-cv-layer2-fl-bset",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-cv-layer2-fl-bm",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-cv-layer2-fl-bm01",
+													"Solid":	"Rock_Stone",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer2-fl-bm02",
+													"Solid":	"Rock_Calcite",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer2-fl-bm03",
+													"Solid":	"Plant_Moss_Block_Green_Dark",
+													"SolidBottomUp":	false
+												}]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-cv-layer2-fl-scn",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lumcvs-fl-midup",
+								"Skip":	false,
+								"MaxY":	65,
+								"MinY":	45,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Bedrock",
+								"TopDownOrder":	false,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	5
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-002",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-002-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-002-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-002-mat",
+										"Solid":	"Plant_Seaweed_Grass",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-002",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-002",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-003",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-003-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-003-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-003-mat",
+										"Solid":	"Plant_Seaweed_Grass_Tall",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-003",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-003",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-004",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-004-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-004-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-004-mat",
+										"Solid":	"Plant_Fern_Wet_Big",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-004",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-004",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-005",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-005-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-005-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-005-mat",
+										"Solid":	"Plant_Fern_Forest",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-005",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-005",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-006",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-006-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-006-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-006-mat",
+										"Solid":	"Plant_Seaweed_Bulbs",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-006",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-006",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-007",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-007-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-007-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-007-mat",
+										"Solid":	"Plant_Moss_Blue",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-007",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-007",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer2-fl-empty",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer2-fl-empty-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer2-fl-empty-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer2-fl-empty-mat",
+										"Solid":	"Empty",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer2-fl-empty",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-midup"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer2-fl-empty",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-midup"
+							}
+						},
+						"Weight":	5
+					}]
+			}, {
+				"$NodeId":	"Weighted.Prop-cv-layer3-floor-0001",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-001",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-001-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-001-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-001-mat",
+										"Solid":	"Plant_Seaweed_Grass_Bulbs",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-cv-layer3-fl-dir",
+								"Type":	"Random",
+								"ExportAs":	"lumcvd-fl-middeep",
+								"Seed":	"LumiCave-MidDeep",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-cv-layer3-fl-pat",
+									"Type":	"Floor",
+									"ExportAs":	"lumcvp-fl-middeep",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-cv-layer3-fl-ori",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-cv-layer3-fl-ori-mat",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-cv-layer3-fl-bset",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-cv-layer3-fl-bm",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-cv-layer3-fl-bm01",
+													"Solid":	"Rock_Stone",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer3-fl-bm02",
+													"Solid":	"Rock_Slate",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer3-fl-bm03",
+													"Solid":	"Plant_Moss_Block_Green_Dark",
+													"SolidBottomUp":	false
+												}]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-cv-layer3-fl-scn",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lumcvs-fl-middeep",
+								"Skip":	false,
+								"MaxY":	45,
+								"MinY":	25,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Bedrock",
+								"TopDownOrder":	false,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-002",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-002-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-002-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-002-mat",
+										"Solid":	"Plant_Seaweed_Grass_Tall",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-002",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-002",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-003",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-003-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-003-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-003-mat",
+										"Solid":	"Plant_Fern_Wet_Big",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-003",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-003",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-004",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-004-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-004-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-004-mat",
+										"Solid":	"Plant_Mushroom_Glow",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-004",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-004",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-005",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-005-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-005-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-005-mat",
+										"Solid":	"Plant_Mushroom_Glow_Small",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-005",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-005",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-006",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-006-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-006-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-006-mat",
+										"Solid":	"Plant_Grass_Wild",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-006",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-006",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-007",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-007-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-007-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-007-mat",
+										"Solid":	"Rock_Crystal_Green_Block",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-007",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-007",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-008",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-008-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-008-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-008-mat",
+										"Solid":	"Rock_Crystal_Blue",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-008",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-008",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	1
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-009",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-009-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-009-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-009-mat",
+										"Solid":	"Plant_Vine_Rug",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-009",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-009",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer3-fl-empty",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer3-fl-empty-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer3-fl-empty-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer3-fl-empty-mat",
+										"Solid":	"Empty",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer3-fl-empty",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-middeep"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer3-fl-empty",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-middeep"
+							}
+						},
+						"Weight":	4
+					}]
+			}, {
+				"$NodeId":	"Weighted.Prop-cv-layer4-floor-0001",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-001",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-001-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-001-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-001-mat",
+										"Solid":	"Rock_Crystal_Green_Block",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-cv-layer4-fl-dir",
+								"Type":	"Random",
+								"ExportAs":	"lumcvd-fl-abyss",
+								"Seed":	"LumiCave-Abyss",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-cv-layer4-fl-pat",
+									"Type":	"Floor",
+									"ExportAs":	"lumcvp-fl-abyss",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-cv-layer4-fl-ori",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-cv-layer4-fl-ori-mat",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-cv-layer4-fl-bset",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-cv-layer4-fl-bm",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-cv-layer4-fl-bm01",
+													"Solid":	"Rock_Slate",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer4-fl-bm02",
+													"Solid":	"Rock_Basalt",
+													"SolidBottomUp":	false
+												}, {
+													"$NodeId":	"Material-cv-layer4-fl-bm03",
+													"Solid":	"Plant_Moss_Block_Green_Dark",
+													"SolidBottomUp":	false
+												}]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-cv-layer4-fl-scn",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lumcvs-fl-abyss",
+								"Skip":	false,
+								"MaxY":	25,
+								"MinY":	5,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Bedrock",
+								"TopDownOrder":	false,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-002",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-002-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-002-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-002-mat",
+										"Solid":	"Rock_Crystal_Blue",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-002",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-002",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-003",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-003-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-003-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-003-mat",
+										"Solid":	"Rock_Crystal_Cyan",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-003",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-003",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	3
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-004",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-004-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-004-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-004-mat",
+										"Solid":	"Rock_Crystal_Purple_Medium",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-004",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-004",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-005",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-005-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-005-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-005-mat",
+										"Solid":	"Rock_Crystal_Pink_Block",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-005",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-005",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-006",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-006-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-006-blk0",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-006-mat0",
+										"Solid":	"Rock_Crystal_Yellow",
+										"SolidBottomUp":	false
+									}
+								}, {
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-006-blk1",
+									"Y":	1,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-006-mat1",
+										"Solid":	"Rock_Crystal_Yellow",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-006",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-006",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	1
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-007",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-007-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-007-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-007-mat",
+										"Solid":	"Rock_Crystal_White",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-007",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-007",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	1
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-008",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-008-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-008-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-008-mat",
+										"Solid":	"Plant_Mushroom_Glow",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-008",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-008",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-009",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-009-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-009-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-009-mat",
+										"Solid":	"Plant_Seaweed_Grass_Bulbs",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-009",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-009",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	2
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-cv-layer4-fl-empty",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-cv-layer4-fl-empty-col",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-cv-layer4-fl-empty-blk",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-cv-layer4-fl-empty-mat",
+										"Solid":	"Empty",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-cv-layer4-fl-empty",
+								"Type":	"Imported",
+								"Name":	"lumcvd-fl-abyss"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-cv-layer4-fl-empty",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lumcvs-fl-abyss"
+							}
+						},
+						"Weight":	5
+					}]
+			}]
+	}
+}

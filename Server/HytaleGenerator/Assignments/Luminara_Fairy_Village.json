@@ -1,0 +1,95 @@
+{
+	"$NodeId": "Constant.Assignments-fv000000-0000-4000-8000-000000000001",
+	"Type": "Constant",
+	"ExportAs": "Luminara_Fairy_Village",
+	"Prop": {
+		"$NodeId": "Weighted.Prop-fv000000-0000-4000-8000-000000000002",
+		"Type": "Weighted",
+		"Skip": false,
+		"Entries": [
+			{
+				"$NodeId": "Entry.Weighted.Prop-fv000000-0000-4000-8000-000000000010",
+				"Prop": {
+					"$NodeId": "Prefab.Prop-fv000000-0000-4000-8000-000000000011",
+					"Type": "Prefab",
+					"Skip": false,
+					"WeightedPrefabPaths": [
+						{
+							"$NodeId": "PrefabPath-fv000000-0000-4000-8000-000000000012",
+							"Path": "Villages/Fairy/",
+							"Weight": 1
+						}
+					],
+					"LegacyPath": false,
+					"LoadEntities": true,
+					"Directionality": {
+						"$NodeId": "Random.Directionality-fv000000-0000-4000-8000-000000000013",
+						"Type": "Random",
+						"Seed": "Lumi-FairyVillage",
+						"Pattern": {
+							"$NodeId": "Floor.Pattern-fv000000-0000-4000-8000-000000000014",
+							"Type": "Floor",
+							"Skip": false,
+							"Origin": {
+								"$NodeId": "BlockType.Pattern-fv000000-0000-4000-8000-000000000015",
+								"Type": "BlockType",
+								"Skip": false,
+								"Material": {
+									"$NodeId": "Material-fv000000-0000-4000-8000-000000000016",
+									"Solid": "Empty",
+									"SolidBottomUp": false
+								}
+							},
+							"Floor": {
+								"$NodeId": "BlockSet.Pattern-fv000000-0000-4000-8000-000000000017",
+								"Type": "BlockSet",
+								"Skip": false,
+								"BlockSet": {
+									"$NodeId": "BlockSet.BlockMask-fv000000-0000-4000-8000-000000000018",
+									"Inclusive": true,
+									"Materials": [
+										{
+											"$NodeId": "Material-fv000000-0000-4000-8000-000000000019",
+											"Solid": "Soil_Grass",
+											"SolidBottomUp": false
+										}
+									]
+								}
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "ColumnLinear.Scanner-fv000000-0000-4000-8000-000000000020",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 50,
+						"MinY": -5,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Base",
+						"TopDownOrder": true,
+						"ResultCap": 1
+					},
+					"MoldingDirection": "None",
+					"MoldingChildren": false
+				},
+				"Weight": 1
+			}
+		]
+	},
+	"$NodeEditorMetadata": {
+		"$Nodes": {
+			"Constant.Assignments-fv000000-0000-4000-8000-000000000001": {
+				"$Position": {
+					"$x": 9900,
+					"$y": 20
+				},
+				"$Title": "[ROOT] Fairy Village Assignment"
+			}
+		},
+		"$FloatingNodes": [],
+		"$Links": {},
+		"$Groups": [],
+		"$Comments": [],
+		"$WorkspaceID": "HytaleGenerator - Assignments"
+	}
+}

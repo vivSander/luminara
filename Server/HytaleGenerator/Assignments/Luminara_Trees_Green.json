@@ -1,0 +1,100 @@
+{
+	"$NodeId":	"Constant.Assignments-cc030303-0000-4000-8000-000000000E01",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Trees_Green",
+	"Prop":	{
+		"$NodeId":	"Weighted.Prop-cc030303-0000-4000-8000-000000000E02",
+		"Type":	"Weighted",
+		"Skip":	false,
+		"Entries":	[{
+				"$NodeId":	"Entry.Weighted.Prop-cc030303-0000-4000-8000-000000000E10",
+				"Prop":	{
+					"$NodeId":	"Prefab.Prop-cc030303-0000-4000-8000-000000000E11",
+					"Type":	"Prefab",
+					"Skip":	false,
+					"WeightedPrefabPaths":	[{
+							"$NodeId":	"PrefabPath-cc030303-0000-4000-8000-000000000E12",
+							"Path":	"Trees/Oak/Stage_4",
+							"Weight":	3.0
+						}, {
+							"$NodeId":	"PrefabPath-cc030303-0000-4000-8000-000000000E15",
+							"Path":	"Trees/Beech/Stage_3",
+							"Weight":	0.7
+						}],
+					"LegacyPath":	false,
+					"LoadEntities":	true,
+					"Directionality":	{
+						"$NodeId":	"Random.Directionality-cc030303-0000-4000-8000-000000000E20",
+						"Type":	"Random",
+						"ExportAs":	"lumd",
+						"Seed":	"Lumi-T-Green",
+						"Pattern":	{
+							"$NodeId":	"Floor.Pattern-cc030303-0000-4000-8000-000000000E21",
+							"Type":	"Floor",
+							"ExportAs":	"lump",
+							"Skip":	false,
+							"Origin":	{
+								"$NodeId":	"BlockType.Pattern-cc030303-0000-4000-8000-000000000E22",
+								"Type":	"BlockType",
+								"Skip":	false,
+								"Material":	{
+									"$NodeId":	"Material-cc030303-0000-4000-8000-000000000E23",
+									"Solid":	"Empty",
+									"SolidBottomUp":	false
+								}
+							},
+							"Floor":	{
+								"$NodeId":	"BlockSet.Pattern-cc030303-0000-4000-8000-000000000E24",
+								"Type":	"BlockSet",
+								"Skip":	false,
+								"BlockSet":	{
+									"$NodeId":	"BlockSet.BlockMask-cc030303-0000-4000-8000-000000000E25",
+									"Inclusive":	true,
+									"Materials":	[{
+											"$NodeId":	"Material-cc030303-0000-4000-8000-000000000E26",
+											"Solid":	"Soil_Grass",
+											"SolidBottomUp":	false
+										}, {
+											"$NodeId":	"Material-cc030303-0000-4000-8000-000000000E27",
+											"Solid":	"Rock_Lime_Cobble",
+											"SolidBottomUp":	false
+										}]
+								}
+							}
+						}
+					},
+					"Scanner":	{
+						"$NodeId":	"ColumnLinear.Scanner-cc030303-0000-4000-8000-000000000E30",
+						"Type":	"ColumnLinear",
+						"ExportAs":	"lums",
+						"Skip":	false,
+						"MaxY":	100,
+						"MinY":	50,
+						"RelativeToPosition":	false,
+						"BaseHeightName":	"Base",
+						"TopDownOrder":	true,
+						"ResultCap":	1
+					},
+					"MoldingDirection":	"None",
+					"MoldingChildren":	false
+				},
+				"Weight":	1
+			}]
+	},
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Constant.Assignments-cc030303-0000-4000-8000-000000000E01":	{
+				"$Position":	{
+					"$x":	9900,
+					"$y":	20
+				},
+				"$Title":	"[ROOT] Constant Assignments"
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Assignments"
+	}
+}

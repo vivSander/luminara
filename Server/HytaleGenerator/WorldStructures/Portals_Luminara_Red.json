@@ -1,0 +1,76 @@
+{
+  "Type": "NoiseRange",
+  "Biomes": [
+    {
+      "Biome": "Luminara_Red",
+      "Min": -1.0,
+      "Max": 1.0
+    }
+  ],
+  "DefaultBiome": "Luminara_Red",
+  "DefaultTransitionDistance": 16,
+  "MaxBiomeEdgeDistance": 16,
+  "ContentFields": [
+    {
+      "Type": "BaseHeight",
+      "Name": "Base",
+      "Y": 240
+    },
+    {
+      "Type": "BaseHeight",
+      "Name": "Water",
+      "Y": 200
+    },
+    {
+      "Type": "BaseHeight",
+      "Name": "Bedrock",
+      "Y": 0
+    }
+  ],
+  "Density": {
+    "Type": "Imported",
+    "Name": "Biome-Map"
+  },
+  "SpawnPositions": {
+    "Type": "Imported",
+    "Name": "Portals-Luminara-Red-Spawns"
+  },
+  "Framework": [
+    {
+      "Type": "Positions",
+      "Entries": [
+        {
+          "Name": "Spawns",
+          "Positions": {
+            "Type": "List",
+            "ExportAs": "Portals-Luminara-Red-Spawns",
+            "Positions": [
+              {
+                "X": 0,
+                "Y": 230,
+                "Z": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Type": "DecimalConstants",
+      "Entries": [
+        {
+          "Name": "Base",
+          "Value": 240
+        },
+        {
+          "Name": "Water",
+          "Value": 200
+        },
+        {
+          "Name": "Bedrock",
+          "Value": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+	"$NodeId":	"Constant.Assignments-enc00000-0000-4000-8000-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Encounters",
+	"Prop":	{
+		"$NodeId":	"Weighted.Prop-enc00000-0000-4000-8000-000000000002",
+		"Type":	"Weighted",
+		"Skip":	false,
+		"Entries":	[{
+				"$NodeId":	"Entry.Weighted.Prop-enc00000-0000-4000-8000-000000000010",
+				"Prop":	{
+					"$NodeId":	"Prefab.Prop-enc00000-0000-4000-8000-000000000012",
+					"Type":	"Prefab",
+					"Skip":	false,
+					"WeightedPrefabPaths":	[{
+							"$NodeId":	"PrefabPath-enc00000-0000-4000-8000-000000000020",
+							"Path":	"Buildings",
+							"Weight":	100
+						}],
+					"LegacyPath":	false,
+					"LoadEntities":	true,
+					"Directionality":	{
+						"$NodeId":	"Random.Directionality-enc00000-0000-4000-8000-000000000030",
+						"Type":	"Random",
+						"Seed":	"Lumi-Enc",
+						"Pattern":	{
+							"$NodeId":	"Floor.Pattern-enc00000-0000-4000-8000-000000000031",
+							"Type":	"Floor",
+							"Skip":	false,
+							"Origin":	{
+								"$NodeId":	"BlockType.Pattern-enc00000-0000-4000-8000-000000000032",
+								"Type":	"BlockType",
+								"Skip":	false,
+								"Material":	{
+									"$NodeId":	"Material-enc00000-0000-4000-8000-000000000033",
+									"Solid":	"Empty",
+									"SolidBottomUp":	false
+								}
+							},
+							"Floor":	{
+								"$NodeId":	"BlockSet.Pattern-enc00000-0000-4000-8000-000000000040",
+								"Type":	"BlockSet",
+								"Skip":	false,
+								"BlockSet":	{
+									"$NodeId":	"BlockSet.BlockMask-enc00000-0000-4000-8000-000000000041",
+									"Inclusive":	true,
+									"Materials":	[{
+											"$NodeId":	"Material-enc00000-0000-4000-8000-000000000042",
+											"Solid":	"Soil_Grass",
+											"SolidBottomUp":	false
+										}, {
+											"$NodeId":	"Material-enc00000-0000-4000-8000-000000000043",
+											"Solid":	"Soil_Grass_Dry",
+											"SolidBottomUp":	false
+										}, {
+											"$NodeId":	"Material-enc00000-0000-4000-8000-000000000044",
+											"Solid":	"Soil_Dirt",
+											"SolidBottomUp":	false
+										}, {
+											"$NodeId":	"Material-enc00000-0000-4000-8000-000000000045",
+											"Solid":	"Rock_Stone",
+											"SolidBottomUp":	false
+										}]
+								}
+							}
+						}
+					},
+					"Scanner":	{
+						"$NodeId":	"ColumnLinear.Scanner-enc00000-0000-4000-8000-000000000050",
+						"Type":	"ColumnLinear",
+						"Skip":	false,
+						"MaxY":	100,
+						"MinY":	0,
+						"RelativeToPosition":	false,
+						"BaseHeightName":	"Base",
+						"TopDownOrder":	true,
+						"ResultCap":	1
+					},
+					"MoldingDirection":	"None",
+					"MoldingChildren":	false
+				},
+				"Weight":	1
+			}]
+	},
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Constant.Assignments-enc00000-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	-144,
+					"$y":	5109
+				},
+				"$Title":	"[ROOT] Constant Assignments"
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Assignments"
+	}
+}

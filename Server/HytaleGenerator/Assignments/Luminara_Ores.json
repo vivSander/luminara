@@ -1,0 +1,1100 @@
+{
+	"$NodeId": "Weighted.Assignments-ore-new-4layer-000000000001",
+	"Type": "Weighted",
+	"ExportAs": "Luminara_Ores",
+	"SkipChance": 0,
+	"Seed": "Lumi-Ores",
+	"WeightedAssignments": [{
+			"$NodeId": "Weight-ore-new-iron-0010",
+			"Weight": 40,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-iron-0011",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-iron-0012",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-iron-0013",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-iron-0014",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-iron-0015",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-iron-0016",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-iron-0017",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-iron-001a",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-iron-001b",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-iron-001c",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-iron-0018",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-iron-0019",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-iron-001d",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 85,
+						"MinY": 55,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-iron-001e",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-iron-001f",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-iron-0020",
+								"Solid": "Ore_Iron_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-iron-0021",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-iron-0022",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-iron-0023",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Iron"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-iron-0024",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-iron-0025",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-iron-0026",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-iron-0027",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-iron-0028",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-iron-0029",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-iron-002a",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-iron-002b",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-iron-002c",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-iron-002d",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-iron-002e",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-iron-002f",
+						"X": 2,
+						"Y": 2,
+						"Z": 2
+					}
+				}
+			}
+		}, {
+			"$NodeId": "Weight-ore-new-copper-0030",
+			"Weight": 35,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-copper-0031",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-copper-0032",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-copper-0033",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-copper-0034",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-copper-0035",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-copper-0036",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-copper-0037",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-copper-003a",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-copper-003b",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-copper-003c",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-copper-0038",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-copper-0039",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-copper-003d",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 80,
+						"MinY": 45,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-copper-003e",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-copper-003f",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-copper-0040",
+								"Solid": "Ore_Copper_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-copper-0041",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-copper-0042",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-copper-0043",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Copper"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-copper-0044",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-copper-0045",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-copper-0046",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-copper-0047",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-copper-0048",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-copper-0049",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-copper-004a",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-copper-004b",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-copper-004c",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-copper-004d",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-copper-004e",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-copper-004f",
+						"X": 2,
+						"Y": 2,
+						"Z": 2
+					}
+				}
+			}
+		}, {
+			"$NodeId": "Weight-ore-new-silver-0050",
+			"Weight": 20,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-silver-0051",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-silver-0052",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-silver-0053",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-silver-0054",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-silver-0055",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-silver-0056",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-silver-0057",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-silver-005a",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-silver-005b",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-silver-005c",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-silver-0058",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-silver-0059",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-silver-005d",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 65,
+						"MinY": 35,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-silver-005e",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-silver-005f",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-silver-0060",
+								"Solid": "Ore_Silver_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-silver-0061",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-silver-0062",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-silver-0063",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Silver"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-silver-0064",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-silver-0065",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-silver-0066",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-silver-0067",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-silver-0068",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-silver-0069",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-silver-006a",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-silver-006b",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-silver-006c",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-silver-006d",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-silver-006e",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-silver-006f",
+						"X": 2,
+						"Y": 2,
+						"Z": 2
+					}
+				}
+			}
+		}, {
+			"$NodeId": "Weight-ore-new-gold-0070",
+			"Weight": 12,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-gold-0071",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-gold-0072",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-gold-0073",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-gold-0074",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-gold-0075",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-gold-0076",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-gold-0077",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-gold-007a",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-gold-007b",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-gold-007c",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-gold-0078",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-gold-0079",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-gold-007d",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 50,
+						"MinY": 20,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-gold-007e",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-gold-007f",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-gold-0080",
+								"Solid": "Ore_Gold_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-gold-0081",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-gold-0082",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-gold-0083",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Gold"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-gold-0084",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-gold-0085",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-gold-0086",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-gold-0087",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-gold-0088",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-gold-0089",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-gold-008a",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-gold-008b",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-gold-008c",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-gold-008d",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-gold-008e",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-gold-008f",
+						"X": 2,
+						"Y": 2,
+						"Z": 2
+					}
+				}
+			}
+		}, {
+			"$NodeId": "Weight-ore-new-cobalt-0090",
+			"Weight": 8,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-cobalt-0091",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-cobalt-0092",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-cobalt-0093",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-cobalt-0094",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-cobalt-0095",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-cobalt-0096",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-cobalt-0097",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-cobalt-009a",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-cobalt-009b",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-cobalt-009c",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-cobalt-0098",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-cobalt-0099",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-cobalt-009d",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 40,
+						"MinY": 15,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-cobalt-009e",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-cobalt-009f",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-cobalt-00a0",
+								"Solid": "Ore_Cobalt_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-cobalt-00a1",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-cobalt-00a2",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-cobalt-00a3",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Cobalt"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-cobalt-00a4",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-cobalt-00a5",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-cobalt-00a6",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-cobalt-00a7",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-cobalt-00a8",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-cobalt-00a9",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-cobalt-00aa",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-cobalt-00ab",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-cobalt-00ac",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-cobalt-00ad",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-cobalt-00ae",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-cobalt-00af",
+						"X": 2,
+						"Y": 2,
+						"Z": 2
+					}
+				}
+			}
+		}, {
+			"$NodeId": "Weight-ore-new-thorium-00b0",
+			"Weight": 6,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-thorium-00b1",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-thorium-00b2",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-thorium-00b3",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-thorium-00b4",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-thorium-00b5",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-thorium-00b6",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-thorium-00b7",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-thorium-00ba",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-thorium-00bb",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-thorium-00bc",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-thorium-00b8",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-thorium-00b9",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-thorium-00bd",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 35,
+						"MinY": 10,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-thorium-00be",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-thorium-00bf",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-thorium-00c0",
+								"Solid": "Ore_Thorium_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-thorium-00c1",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-thorium-00c2",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-thorium-00c3",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Thorium"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-thorium-00c4",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-thorium-00c5",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-thorium-00c6",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-thorium-00c7",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-thorium-00c8",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-thorium-00c9",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-thorium-00ca",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-thorium-00cb",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-thorium-00cc",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-thorium-00cd",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-thorium-00ce",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-thorium-00cf",
+						"X": 2,
+						"Y": 2,
+						"Z": 2
+					}
+				}
+			}
+		}, {
+			"$NodeId": "Weight-ore-new-mithril-00d0",
+			"Weight": 2,
+			"Assignments": {
+				"$NodeId": "Const-ore-new-mithril-00d1",
+				"Type": "Constant",
+				"Prop": {
+					"$NodeId": "Density-ore-new-mithril-00d2",
+					"Type": "Density",
+					"Skip": false,
+					"Pattern": {
+						"$NodeId": "Ceil-ore-new-mithril-00d3",
+						"Type": "Ceiling",
+						"Skip": false,
+						"Ceiling": {
+							"$NodeId": "BSet-ore-new-mithril-00d4",
+							"Type": "BlockSet",
+							"Skip": false,
+							"BlockSet": {
+								"$NodeId": "BSetBM-ore-new-mithril-00d5",
+								"Inclusive": true,
+								"Materials": [{
+										"$NodeId": "Mat-ore-new-mithril-00d6",
+										"Solid": "Soil_Grass"
+									}, {
+										"$NodeId": "Mat-ore-new-mithril-00d7",
+										"Solid": "Rock_Stone"
+									}, {
+										"$NodeId": "Mat-ore-new-mithril-00da",
+										"Solid": "Rock_Calcite"
+									}, {
+										"$NodeId": "Mat-ore-new-mithril-00db",
+										"Solid": "Rock_Slate"
+									}, {
+										"$NodeId": "Mat-ore-new-mithril-00dc",
+										"Solid": "Rock_Basalt"
+									}]
+							}
+						},
+						"Origin": {
+							"$NodeId": "BType-ore-new-mithril-00d8",
+							"Type": "BlockType",
+							"Skip": false,
+							"Material": {
+								"$NodeId": "Mat-ore-new-mithril-00d9",
+								"Solid": "Empty"
+							}
+						}
+					},
+					"Scanner": {
+						"$NodeId": "Scn-ore-new-mithril-00dd",
+						"Type": "ColumnLinear",
+						"Skip": false,
+						"MaxY": 20,
+						"MinY": 5,
+						"RelativeToPosition": false,
+						"BaseHeightName": "Bedrock",
+						"TopDownOrder": false,
+						"ResultCap": 1
+					},
+					"Material": {
+						"$NodeId": "Sol-ore-new-mithril-00de",
+						"Type": "Solidity",
+						"Solid": {
+							"$NodeId": "CMP-ore-new-mithril-00df",
+							"Type": "Constant",
+							"Material": {
+								"$NodeId": "Mat-ore-new-mithril-00e0",
+								"Solid": "Ore_Mithril_Stone"
+							}
+						}
+					},
+					"Density": {
+						"$NodeId": "Sum-ore-new-mithril-00e1",
+						"Type": "Sum",
+						"Skip": false,
+						"Inputs": [{
+								"$NodeId": "Norm-ore-new-mithril-00e2",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.3,
+								"ToMax": 0.3,
+								"Inputs": [{
+										"$NodeId": "Noise-ore-new-mithril-00e3",
+										"Type": "SimplexNoise3D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 1,
+										"ScaleXZ": 8,
+										"ScaleY": 8,
+										"Seed": "Lumi-Mithril"
+									}]
+							}, {
+								"$NodeId": "Norm-ore-new-mithril-00e4",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.7,
+								"ToMax": 0.7,
+								"Inputs": [{
+										"$NodeId": "Anch-ore-new-mithril-00e5",
+										"Type": "Anchor",
+										"Skip": false,
+										"Reversed": false,
+										"Inputs": [{
+												"$NodeId": "Cube-ore-new-mithril-00e6",
+												"Type": "Cube",
+												"Skip": false,
+												"Curve": {
+													"$NodeId": "Crv-ore-new-mithril-00e7",
+													"Type": "Manual",
+													"Points": [{
+															"$NodeId": "CP-ore-new-mithril-00e8",
+															"In": 0,
+															"Out": 1
+														}, {
+															"$NodeId": "CP-ore-new-mithril-00e9",
+															"In": 3,
+															"Out": -2
+														}]
+												}
+											}]
+									}]
+							}]
+					},
+					"PlacementMask": {
+						"$NodeId": "BM-ore-new-mithril-00ea",
+						"DontPlace": {
+							"$NodeId": "BSetDP-ore-new-mithril-00eb",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDP-ore-new-mithril-00ec",
+									"Solid": "Empty"
+								}]
+						},
+						"DontReplace": {
+							"$NodeId": "BSetDR-ore-new-mithril-00ed",
+							"Inclusive": true,
+							"Materials": [{
+									"$NodeId": "MatDR-ore-new-mithril-00ee",
+									"Solid": "Empty"
+								}]
+						}
+					},
+					"Range": {
+						"$NodeId": "Rng-ore-new-mithril-00ef",
+						"X": 1,
+						"Y": 1,
+						"Z": 1
+					}
+				}
+			}
+		}]
+}

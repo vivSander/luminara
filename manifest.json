@@ -1,0 +1,15 @@
+{
+  "Group": "Landscaper",
+  "Name": "Adoa_Luminara_Biomes",
+  "Version": "1.0.0",
+  "Description": "A pink & green magical world with crystal caves, oceans and rivers",
+  "Authors": [],
+  "Website": "https://www.curseforge.com/members/landscaper/projects",
+  "ServerVersion": "2026.03.26-89796e57b",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}

@@ -1,0 +1,11 @@
+{
+  "InstanceId": "Portals_Luminara",
+  "Description": {
+    "DisplayName": "server.portals.luminara",
+    "FlavorText": "server.portals.luminara.description",
+    "Tips": [
+      "server.portals.taiga.tip1"
+    ],
+    "SplashImage": "DefaultArtwork.png"
+  }
+}

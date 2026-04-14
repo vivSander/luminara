@@ -1,0 +1,29 @@
+{
+  "Environments": [
+    "Env_Luminara"
+  ],
+  "NPCs": [
+    {
+      "Weight": 20,
+      "SpawnBlockSet": "Soil",
+      "Id": "Boar",
+      "Flock": "Group_Small"
+    },
+    {
+      "Weight": 15,
+      "SpawnBlockSet": "Soil",
+      "Id": "Bunny",
+      "Flock": "Group_Tiny"
+    },
+    {
+      "Weight": 5,
+      "SpawnBlockSet": "Soil",
+      "Id": "Horse",
+      "Flock": "Group_Medium"
+    }
+  ],
+  "DayTimeRange": [
+    6,
+    18
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "version": 8,
+  "blockIdVersion": 11,
+  "anchorX": 0,
+  "anchorY": 0,
+  "anchorZ": 0,
+  "blocks": [
+    {
+      "x": -1,
+      "y": 0,
+      "z": -2,
+      "name": "Potion_Empty"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -1,
+      "name": "Plant_Flower_Common_Purple2"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "name": "Plant_Petals_Purple"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "name": "Plant_Flower_Tall_Purple"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 2,
+      "name": "Potion_Poison"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -3,
+      "name": "Wood_Crystal_Branch_Short",
+      "support": 15,
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -2,
+      "name": "Wood_Crystal_Trunk",
+      "support": 15,
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "name": "Wood_Crystal_Trunk",
+      "support": 15,
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "name": "Wood_Crystal_Trunk",
+      "support": 15,
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "name": "Potion_Stamina_Large"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "name": "Wood_Crystal_Trunk",
+      "support": 15,
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "name": "Wood_Crystal_Trunk",
+      "support": 15,
+      "rotation": 4
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "name": "Wood_Crystal_Branch_Short",
+      "support": 15
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -3,
+      "name": "Potion_Regen_Health_Small"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -2,
+      "name": "Plant_Flower_Tall_Purple"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "name": "Plant_Coral_Bush_Purple"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "name": "*Plant_Crop_Onion_Block_Eternal_State_Definitions_Stage1",
+      "components": {
+        "Components": {
+          "FarmingBlock": {
+            "GrowthProgress": 1.766798496246338,
+            "LastTickGameTime": "0001-02-01T19:00:00.001716613Z",
+            "Generation": 1
+          },
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "usHuoxbhTZaFKBfBlh8H7w==",
+              "$type": "04"
+            }
+          }
+        }
+      }
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "name": "Plant_Petals_Purple"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -2,
+      "name": "Plant_Coral_Bush_Purple"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -1,
+      "name": "Plant_Flower_Tall_Purple"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "name": "Plant_Petals_Purple"
+    }
+  ],
+  "fluids": [
+    {
+      "x": -1,
+      "y": 0,
+      "z": -2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -3,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -3,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": -1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    }
+  ]
+}

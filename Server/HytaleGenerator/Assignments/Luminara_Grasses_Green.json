@@ -1,0 +1,325 @@
+{
+	"$NodeId":	"Constant.Assignments-aa020202-0000-4000-8000-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Grasses_Green",
+	"Prop":	{
+		"$NodeId":	"Union.Prop-aa020202-0000-4000-8000-000000000002",
+		"Type":	"Union",
+		"Skip":	false,
+		"Props":	[{
+				"$NodeId":	"Weighted.Prop-aa020202-0000-4000-8000-000000000003",
+				"Type":	"Weighted",
+				"Skip":	false,
+				"Entries":	[{
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000010",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000011",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000012",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000013",
+										"Solid":	"Plant_Grass_Sharp",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Random.Directionality-aa020202-0000-4000-8000-000000000020",
+								"Type":	"Random",
+								"ExportAs":	"lumd",
+								"Seed":	"LumiGreen-A",
+								"Pattern":	{
+									"$NodeId":	"Floor.Pattern-aa020202-0000-4000-8000-000000000021",
+									"Type":	"Floor",
+									"ExportAs":	"lump",
+									"Skip":	false,
+									"Origin":	{
+										"$NodeId":	"BlockType.Pattern-aa020202-0000-4000-8000-000000000022",
+										"Type":	"BlockType",
+										"Skip":	false,
+										"Material":	{
+											"$NodeId":	"Material-aa020202-0000-4000-8000-000000000023",
+											"Solid":	"Empty",
+											"SolidBottomUp":	false
+										}
+									},
+									"Floor":	{
+										"$NodeId":	"BlockSet.Pattern-aa020202-0000-4000-8000-000000000024",
+										"Type":	"BlockSet",
+										"Skip":	false,
+										"BlockSet":	{
+											"$NodeId":	"BlockSet.BlockMask-aa020202-0000-4000-8000-000000000025",
+											"Inclusive":	true,
+											"Materials":	[{
+													"$NodeId":	"Material-aa020202-0000-4000-8000-000000000026",
+													"Solid":	"Soil_Grass",
+													"SolidBottomUp":	false
+												}]
+										}
+									}
+								}
+							},
+							"Scanner":	{
+								"$NodeId":	"ColumnLinear.Scanner-aa020202-0000-4000-8000-000000000030",
+								"Type":	"ColumnLinear",
+								"ExportAs":	"lums",
+								"Skip":	false,
+								"MaxY":	70,
+								"MinY":	-3,
+								"RelativeToPosition":	false,
+								"BaseHeightName":	"Base",
+								"TopDownOrder":	true,
+								"ResultCap":	1
+							}
+						},
+						"Weight":	20
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000040",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000041",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000042",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000043",
+										"Solid":	"Plant_Grass_Jungle",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-000000000044",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-000000000045",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	16
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000050",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000051",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000052",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000053",
+										"Solid":	"Plant_Grass_Jungle_Tall",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-000000000054",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-000000000055",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	12
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000060",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000061",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000062",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000063",
+										"Solid":	"Plant_Grass_Lush",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-000000000064",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-000000000065",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	16
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000070",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000071",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000072",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000073",
+										"Solid":	"Plant_Grass_Lush_Tall",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-000000000074",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-000000000075",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	12
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000080",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000081",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000082",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000083",
+										"Solid":	"Seaweed_Grass",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-000000000084",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-000000000085",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	8
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-000000000090",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-000000000091",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-000000000092",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-000000000093",
+										"Solid":	"Fern_Forest",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-000000000094",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-000000000095",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	8
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-0000000000a0",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-0000000000a1",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-0000000000a2",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-0000000000a3",
+										"Solid":	"Vine_Rug",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-0000000000a4",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-0000000000a5",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	5
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-0000000000b0",
+						"Prop":	{
+							"$NodeId":	"Column.Prop-aa020202-0000-4000-8000-0000000000b1",
+							"Type":	"Column",
+							"Skip":	false,
+							"ColumnBlocks":	[{
+									"$NodeId":	"Block.Column.Prop-aa020202-0000-4000-8000-0000000000b2",
+									"Y":	0,
+									"Material":	{
+										"$NodeId":	"Material-aa020202-0000-4000-8000-0000000000b3",
+										"Solid":	"Moss_Blue",
+										"SolidBottomUp":	false
+									}
+								}],
+							"Directionality":	{
+								"$NodeId":	"Imported.Directionality-aa020202-0000-4000-8000-0000000000b4",
+								"Type":	"Imported",
+								"Name":	"lumd"
+							},
+							"Scanner":	{
+								"$NodeId":	"Imported.Scanner-aa020202-0000-4000-8000-0000000000b5",
+								"Type":	"Imported",
+								"Skip":	false,
+								"Name":	"lums"
+							}
+						},
+						"Weight":	4
+					}, {
+						"$NodeId":	"Entry.Weighted.Prop-aa020202-0000-4000-8000-0000000000c0",
+						"Skip":	false,
+						"Weight":	15
+					}]
+			}]
+	},
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Constant.Assignments-aa020202-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	9105,
+					"$y":	1716
+				},
+				"$Title":	"[ROOT] Constant Assignments"
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Assignments"
+	}
+}

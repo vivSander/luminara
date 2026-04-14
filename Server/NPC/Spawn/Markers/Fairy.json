@@ -1,0 +1,20 @@
+{
+	"Model": "NPC_Spawn_Marker",
+	"NPCs": [
+		{
+			"Name": "Fairy",
+			"Weight": 100,
+			"RealtimeRespawnTime": 120,
+			"Flock": {
+				"Size": [
+					1,
+					2
+				]
+			}
+		}
+	],
+	"ExclusionRadius": 6,
+	"RealtimeRespawn": true,
+	"MaxDropHeight": 4,
+	"DeactivationDistance": 150
+}

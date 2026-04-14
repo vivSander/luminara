@@ -1,0 +1,23 @@
+{
+  "Environments": [
+    "Env_Luminara"
+  ],
+  "NPCs": [
+    {
+      "Weight": 10,
+      "SpawnBlockSet": "Soil",
+      "Id": "Fairy",
+      "Flock": "Group_Small"
+    },
+    {
+      "Weight": 10,
+      "SpawnBlockSet": "Birds",
+      "Id": "Fairy",
+      "Flock": "Group_Small"
+    }
+  ],
+  "DayTimeRange": [
+    0,
+    24
+  ]
+}

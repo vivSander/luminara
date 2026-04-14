@@ -1,0 +1,31 @@
+{
+	"$NodeId":	"Constant.Assignments-bb030303-0000-4000-8000-000000000001",
+	"Type":	"Constant",
+	"ExportAs":	"Luminara_Props_Green",
+	"Prop":	{
+		"$NodeId":	"Weighted.Prop-bb030303-0000-4000-8000-000000000002",
+		"Type":	"Weighted",
+		"Skip":	false,
+		"Entries":	[{
+				"$NodeId":	"Entry.Weighted.Prop-bb030303-0000-4000-8000-000000000010",
+				"Skip":	false,
+				"Weight":	1
+			}]
+	},
+	"$NodeEditorMetadata":	{
+		"$Nodes":	{
+			"Constant.Assignments-bb030303-0000-4000-8000-000000000001":	{
+				"$Position":	{
+					"$x":	9900,
+					"$y":	20
+				},
+				"$Title":	"[ROOT] Constant Assignments"
+			}
+		},
+		"$FloatingNodes":	[],
+		"$Links":	{},
+		"$Groups":	[],
+		"$Comments":	[],
+		"$WorkspaceID":	"HytaleGenerator - Assignments"
+	}
+}

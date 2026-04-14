@@ -1,0 +1,226 @@
+{
+  "version": 8,
+  "blockIdVersion": 11,
+  "anchorX": 0,
+  "anchorY": 0,
+  "anchorZ": 0,
+  "blocks": [
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "name": "Plant_Fruit_Apple"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "name": "Furniture_Crude_Stool",
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "name": "Plant_Petals_Purple"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "name": "Furniture_Crude_Table"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "name": "Deco_Treasure",
+      "rotation": 2
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "name": "Furniture_Crude_Table",
+      "filler": 32
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "name": "Plant_Fruit_Apple"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "name": "Plant_Grass_Sharp",
+      "support": 15
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "name": "Furniture_Crude_Stool",
+      "rotation": 2
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "name": "Furniture_Crude_Table",
+      "filler": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "name": "Plant_Fruit_Apple"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "name": "Furniture_Crude_Table",
+      "filler": 33
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "name": "Furniture_Human_Ruins_Pot_Small"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "name": "Plant_Fruit_Apple"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "name": "Plant_Fruit_Apple"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "name": "Plant_Flower_Tall_Purple"
+    }
+  ],
+  "fluids": [
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "name": "Empty",
+      "level": 0
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "name": "Empty",
+      "level": 0
+    }
+  ]
+}

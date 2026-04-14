@@ -1,0 +1,782 @@
+{
+	"$NodeId": "Biome-f6a3b3c4-d5e6-7890-abcd-ef0123456701",
+	"Name": "Luminara_Plains_Green",
+	"Terrain": {
+		"$NodeId": "Terrain-f6a3b3c4-d5e6-7890-abcd-ef0123456702",
+		"Type": "DAOTerrain",
+		"Density": {
+			"$NodeId": "MinDensityNode-cave-f6a3-4000-8000-000000000001",
+			"Type": "Min",
+			"Skip": false,
+			"Inputs": [
+				{
+					"$NodeId": "SumDensityNode-a1c74ac1-bcec-4528-b149-ed07d8b49ce5",
+					"Type": "Sum",
+					"Skip": false,
+					"Inputs": [
+						{
+							"$NodeId": "CurveMapper.Density-f6a3b3c4-d5e6-7890-abcd-ef0123456703",
+							"Type": "CurveMapper",
+							"Skip": false,
+							"Curve": {
+								"$NodeId": "ManualCurve-f6a3b3c4-d5e6-7890-abcd-ef0123456704",
+								"Type": "Manual",
+								"Points": [
+									{
+										"$NodeId": "CurvePoint-f6a3b3c4-d5e6-7890-abcd-ef0123456705",
+										"In": 0,
+										"Out": 1
+									},
+									{
+										"$NodeId": "CurvePoint-f6a3b3c4-d5e6-7890-abcd-ef0123456706",
+										"In": 20,
+										"Out": -1.5
+									}
+								]
+							},
+							"Inputs": [
+								{
+									"$NodeId": "BaseHeight.Density-f6a3b3c4-d5e6-7890-abcd-ef0123456708",
+									"Type": "BaseHeight",
+									"Skip": false,
+									"BaseHeightName": "Base",
+									"Distance": true
+								}
+							]
+						},
+						{
+							"$NodeId": "SimplexNoise2DDensityNode-c660fdb0-a63a-409f-89b0-bc9b9c7f4dc8",
+							"Type": "SimplexNoise2D",
+							"Skip": false,
+							"Lacunarity": 2,
+							"Persistence": 0.25,
+							"Octaves": 3,
+							"Scale": 600,
+							"Seed": "LumiPlains-Terrain"
+						}
+					]
+				},
+				{
+					"$NodeId": "ImportedDensityNode-cave-f6a3-4000-8000-000000000002",
+					"Type": "Imported",
+					"Skip": false,
+					"Name": "Luminara_Caves_Terrain"
+				}
+			]
+		}
+	},
+	"MaterialProvider": {
+		"$NodeId": "SolidityMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef0123456709",
+		"Type": "Solidity",
+		"Solid": {
+			"$NodeId": "QueueMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef012345670a",
+			"Type": "Queue",
+			"Queue": [
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-f6a3-basic-surf-0001",
+					"Type": "SimpleHorizontal",
+					"TopY": 50,
+					"TopBaseHeight": "Base",
+					"BottomY": 0,
+					"BottomBaseHeight": "Water",
+					"Material": {
+						"$NodeId": "SpaceAndDepthMaterialProvider-f6a3-basic-sad",
+						"Type": "SpaceAndDepth",
+						"LayerContext": "DEPTH_INTO_FLOOR",
+						"MaxExpectedDepth": 5,
+						"Layers": [
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-f6a3-basic-grass",
+								"Type": "ConstantThickness",
+								"Thickness": 1,
+								"Material": {
+									"$NodeId": "ConstantMaterialProvider-f6a3-basic-grass",
+									"Type": "Constant",
+									"Material": {
+										"$NodeId": "Material-f6a3-basic-grass",
+										"Solid": "Soil_Grass",
+										"SolidBottomUp": false
+									}
+								}
+							},
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-f6a3-basic-dirt",
+								"Type": "ConstantThickness",
+								"Thickness": 3,
+								"Material": {
+									"$NodeId": "ConstantMaterialProvider-f6a3-basic-dirt",
+									"Type": "Constant",
+									"Material": {
+										"$NodeId": "Material-f6a3-basic-dirt",
+										"Solid": "Soil_Dirt",
+										"SolidBottomUp": false
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-lumpg-beach-sand-0001",
+					"Type": "SimpleHorizontal",
+					"TopY": 8,
+					"TopBaseHeight": "Water",
+					"BottomY": 0,
+					"BottomBaseHeight": "Water",
+					"Material": {
+						"$NodeId": "SpaceAndDepthMaterialProvider-lumpg-beach-sad",
+						"Type": "SpaceAndDepth",
+						"LayerContext": "DEPTH_INTO_FLOOR",
+						"MaxExpectedDepth": 4,
+						"Layers": [
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-lumpg-beach-sand",
+								"Type": "ConstantThickness",
+								"Thickness": 3,
+								"Material": {
+									"$NodeId": "ConstantMaterialProvider-lumpg-beach-sand",
+									"Type": "Constant",
+									"Material": {
+										"$NodeId": "Material-lumpg-beach-sand",
+										"Solid": "Soil_Sand",
+										"SolidBottomUp": false
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-f6a3-basic-underwater-0001",
+					"Type": "SimpleHorizontal",
+					"TopY": 0,
+					"TopBaseHeight": "Water",
+					"BottomY": 85,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "SpaceAndDepthMaterialProvider-f6a3-basic-underwater-sad",
+						"Type": "SpaceAndDepth",
+						"LayerContext": "DEPTH_INTO_FLOOR",
+						"MaxExpectedDepth": 5,
+						"Layers": [
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-f6a3-basic-underwater-sand",
+								"Type": "ConstantThickness",
+								"Thickness": 2,
+								"Material": {
+									"$NodeId": "ConstantMaterialProvider-f6a3-basic-underwater-sand",
+									"Type": "Constant",
+									"Material": {
+										"$NodeId": "Material-f6a3-basic-underwater-sand",
+										"Solid": "Soil_Sand",
+										"SolidBottomUp": false
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-cave-zone-0001",
+					"Type": "SimpleHorizontal",
+					"TopY": 85,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 5,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "SpaceAndDepthMaterialProvider-cave-zone-sad",
+						"Type": "SpaceAndDepth",
+						"LayerContext": "DEPTH_INTO_FLOOR",
+						"MaxExpectedDepth": 5,
+						"Layers": [
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-cave-zone-grass",
+								"Type": "ConstantThickness",
+								"Thickness": 1,
+								"Material": {
+									"$NodeId": "ConstantMaterialProvider-cave-zone-grass",
+									"Type": "Constant",
+									"Material": {
+										"$NodeId": "Material-cave-zone-grass",
+										"Solid": "Plant_Moss_Block_Green_Dark",
+										"SolidBottomUp": false
+									}
+								}
+							},
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-cave-zone-dirt",
+								"Type": "ConstantThickness",
+								"Thickness": 2,
+								"Material": {
+									"$NodeId": "ConstantMaterialProvider-cave-zone-dirt",
+									"Type": "Constant",
+									"Material": {
+										"$NodeId": "Material-cave-zone-dirt",
+										"Solid": "Soil_Dirt",
+										"SolidBottomUp": false
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-strata-calc-LuminaraPlainsGreen-bulk-edit-00fd",
+					"Type": "SimpleHorizontal",
+					"TopY": 85,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 65,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "ConstantMaterialProvider-strata-calc-LuminaraPlainsGreen-bulk-edit-00fe",
+						"Type": "Constant",
+						"Material": {
+							"$NodeId": "Material-strata-calc-LuminaraPlainsGreen-bulk-edit-00ff",
+							"Solid": "Rock_Calcite",
+							"SolidBottomUp": false
+						}
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-strata-slate-LuminaraPlainsGreen-bulk-edit-0100",
+					"Type": "SimpleHorizontal",
+					"TopY": 35,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 15,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "ConstantMaterialProvider-strata-slate-LuminaraPlainsGreen-bulk-edit-0101",
+						"Type": "Constant",
+						"Material": {
+							"$NodeId": "Material-strata-slate-LuminaraPlainsGreen-bulk-edit-0102",
+							"Solid": "Rock_Slate",
+							"SolidBottomUp": false
+						}
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-strata-basalt-LuminaraPlainsGreen-bulk-edit-0103",
+					"Type": "SimpleHorizontal",
+					"TopY": 15,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 0,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "ConstantMaterialProvider-strata-basalt-LuminaraPlainsGreen-bulk-edit-0104",
+						"Type": "Constant",
+						"Material": {
+							"$NodeId": "Material-strata-basalt-LuminaraPlainsGreen-bulk-edit-0105",
+							"Solid": "Rock_Basalt",
+							"SolidBottomUp": false
+						}
+					}
+				},
+				{
+					"$NodeId": "ConstantMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef012345670b",
+					"Type": "Constant",
+					"Material": {
+						"$NodeId": "Material-f6a3b3c4-d5e6-7890-abcd-ef012345670c",
+						"Solid": "Rock_Stone",
+						"SolidBottomUp": false
+					}
+				}
+			]
+		},
+		"Empty": {
+			"$NodeId": "QueueMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef012345670d",
+			"Type": "Queue",
+			"Queue": [
+				{
+					"$NodeId": "ConstantMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef012345670e",
+					"$Comment": "REQUIRED",
+					"Type": "Constant",
+					"Material": {
+						"$NodeId": "Material-f6a3b3c4-d5e6-7890-abcd-ef012345670f",
+						"Solid": "Empty",
+						"SolidBottomUp": false
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef0123456710",
+					"Type": "SimpleHorizontal",
+					"TopY": 0,
+					"TopBaseHeight": "Water",
+					"BottomY": 90,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "ConstantMaterialProvider-f6a3b3c4-d5e6-7890-abcd-ef0123456711",
+						"Type": "Constant",
+						"Material": {
+							"$NodeId": "Material-f6a3b3c4-d5e6-7890-abcd-ef0123456712",
+							"Fluid": "Water_Source",
+							"SolidBottomUp": false
+						}
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-f6-bedrock",
+					"Type": "SimpleHorizontal",
+					"TopY": 10,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 0,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "ConstantMaterialProvider-f6-bedrock",
+						"Type": "Constant",
+						"Material": {
+							"$NodeId": "Material-f6-bedrock",
+							"Solid": "Rock_Bedrock",
+							"SolidBottomUp": false
+						}
+					}
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-cave-empty-Luminara_Plains_Green",
+					"Type": "SimpleHorizontal",
+					"TopY": 85,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 5,
+					"BottomBaseHeight": "Bedrock",
+					"Material": {
+						"$NodeId": "ConstantMaterialProvider-cave-empty-Luminara_Plains_Green",
+						"Type": "Constant",
+						"Material": {
+							"$NodeId": "Material-cave-empty-Luminara_Plains_Green",
+							"Solid": "Empty",
+							"SolidBottomUp": false
+						}
+					}
+				}
+			]
+		}
+	},
+	"Props": [
+		{
+			"$NodeId": "Runtime-f6a3-props-0001",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-e087bd4c-2fcb-5e04-89fd-4bc686e80d0b",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-2a9c38f2-7d63-5b86-a48c-505983a012d7",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-56f1f137-3704-5e9b-8e74-4344d292d4b0",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-dada281b-423d-5828-b3b2-61b71c1d4d9c",
+							"X": 1,
+							"Y": 1,
+							"Z": 1
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-6bfa115e-603e-54a0-8109-2f24b43d743a",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "LumiPlains-Grasses-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-ceebd598-5c46-52b0-a410-28b513534b9e",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-f6a3-props-0004",
+					"Type": "Imported",
+					"Name": "Luminara_Grasses_Green"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-f6a3-props-0005",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-205f848d-10dc-5819-af08-dd209f373dfb",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-aad16193-cf6a-535e-bbc0-7e4aa2a2e534",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-0eb1148e-5df4-5cb9-8959-60bee0147cc5",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-25a3902f-4408-5f4a-bd5f-cc4850671f93",
+							"X": 15,
+							"Y": 15,
+							"Z": 8
+						},
+						"Positions": {
+							"$NodeId": "OccurrencePositions-lpg-trees-9a4a9a30-1f2a-4f0c-b2a6-74f49b2f4b71",
+							"Type": "Occurrence",
+							"Skip": false,
+							"Seed": "LumiPlainsGreen-Trees-Occ",
+							"FieldFunction": {
+								"$NodeId": "NormalizerDensityNode-lpg-trees-32d5f0a6-6f4c-4c0d-9a7c-2a8b2c3f9d11",
+								"Type": "Normalizer",
+								"Skip": false,
+								"FromMin": -1,
+								"FromMax": 1,
+								"ToMin": -0.5,
+								"ToMax": 1,
+								"Inputs": [
+									{
+										"$NodeId": "SimplexNoise2DDensityNode-lpg-trees-6f3d1d28-7c0b-4f3a-8a5d-9b6b2a1c4e7f",
+										"Type": "SimplexNoise2D",
+										"Skip": false,
+										"Lacunarity": 2,
+										"Persistence": 0.5,
+										"Octaves": 3,
+										"Scale": 10,
+										"Seed": "LumiPlainsGreen-Trees-Patch"
+									}
+								]
+							},
+							"Positions": {
+								"$NodeId": "Jitter2d.Positions-634637ac-dfef-508f-b287-62db34dbb2c8",
+								"Type": "Jitter2d",
+								"Skip": false,
+								"Magnitude": 0.5,
+								"Seed": "LumiPlains-Trees-Pos",
+								"Positions": {
+									"$NodeId": "TriangularGrid2d.Positions-6a574dc7-e60b-55d6-8916-14368f62791e",
+									"Type": "TriangularGrid2d",
+									"Skip": false
+								}
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-f6a3-props-0008",
+					"Type": "Imported",
+					"Name": "Luminara_Trees_Green"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-f6a3-props-plains-0010",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-6789f53e-22a4-57f2-a397-22a0ee639018",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-7da87f62-03de-5e23-bf33-2c9ffdd60aba",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-71d9970e-f81b-5c92-b703-7ecf3964e4ec",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-ec9d3964-d5d0-590d-b149-32bf633dac6a",
+							"X": 12,
+							"Y": 12,
+							"Z": 12
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-71a495e8-ebf5-53be-9c50-8604cb7f3835",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "LumiPlains-Props-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-180a990a-5ac4-5d8d-a378-4b00c1fd3329",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-f6a3-props-plains-0013",
+					"Type": "Imported",
+					"Name": "Luminara_Props_Green"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-cv-f6a3-cave-4000-8000-000000000001",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-c1f21a4b-8a4a-568c-86fc-be8ab0277f20",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-d5a214c7-1ebc-5ba8-92c0-3e390769bb89",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-fff773a1-d142-54a2-8865-05124e83e7f0",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-cd012ce3-7e7b-5dc3-b48e-2723138d5aa7",
+							"X": 8,
+							"Y": 8,
+							"Z": 8
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-c457956a-63f1-59db-8029-9af9fee9fa7d",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "LumiCave-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-2db307ef-c69f-5ef6-a9b6-003346cf9127",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-cv-f6a3-cave-4000-8000-000000000004",
+					"Type": "Imported",
+					"Name": "Luminara_Caves"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-calcite-cc040404-0000-4000-8000-000000000001",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-cc040404-0000-4000-8000-000000000002",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-cc040404-0000-4000-8000-000000000003",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "OccurrencePositions-cc040404-0000-4000-8000-000000000004",
+						"Type": "Occurrence",
+						"Skip": false,
+						"Seed": "A",
+						"FieldFunction": {
+							"$NodeId": "SimplexNoise2DDensityNode-cc040404-0000-4000-8000-000000000005",
+							"Type": "SimplexNoise2D",
+							"Skip": false,
+							"Lacunarity": 2,
+							"Persistence": 0.5,
+							"Octaves": 3,
+							"Scale": 80,
+							"Seed": "LumiCalcite-Occ"
+						},
+						"Positions": {
+							"$NodeId": "Scaler.Positions-cc040404-0000-4000-8000-000000000007",
+							"Type": "Scaler",
+							"Skip": false,
+							"Scale": {
+								"$NodeId": "Point3D-cc040404-0000-4000-8000-000000000008",
+								"X": 12,
+								"Y": 12,
+								"Z": 12
+							},
+							"Positions": {
+								"$NodeId": "Jitter2d.Positions-cc040404-0000-4000-8000-000000000009",
+								"Type": "Jitter2d",
+								"Skip": false,
+								"Magnitude": 0.5,
+								"Seed": "LumiCalcite-Pos",
+								"Positions": {
+									"$NodeId": "TriangularGrid2d.Positions-cc040404-0000-4000-8000-00000000000a",
+									"Type": "TriangularGrid2d",
+									"Skip": false
+								}
+							}
+						},
+						"Normalizer": {
+							"$Generic": true,
+							"ToMin": -0.5,
+							"ToMax": 1
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-cc040404-0000-4000-8000-00000000000b",
+					"Type": "Imported",
+					"Name": "Luminara_Calcite_Green"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-lumi-rubble-7f51532b-8fd0-49ca-bbb5-1ba38775d044",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-3315aeb4-8c51-5962-8914-e8f495cc7ebc",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-e63de540-2855-568d-a1ec-6245efe76ed9",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-f8e072a9-2f08-5338-97ff-9a64127ebd1f",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-0dba0e6e-cb12-58ec-bd86-216e8a1162ad",
+							"X": 5,
+							"Y": 5,
+							"Z": 5
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-f6f17e96-f91d-5936-a365-0a30ce06b239",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "LumiPlains-Rubble-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-e761322c-3f6d-5d4c-8729-153ebf5e4e91",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-lumi-rubble-7f51532b-8fd0-49ca-bbb5-1ba38775d044",
+					"Type": "Imported",
+					"Name": "Boreal1_Hedera_Rubble"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-lumi-boulders-ca7f7c4a-bb37-4107-acff-243a4c9bab36",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-2a8b7609-9f34-5467-83f9-b9d48891bcf4",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-cdc42adc-3c15-574f-bb48-a08ab29d1f19",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-7876fa94-db87-53bb-9d40-dff5a37b760f",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-2df392ab-2eb4-52ce-8723-6c538bb60ac2",
+							"X": 10,
+							"Y": 10,
+							"Z": 10
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-261accea-c861-5108-b665-da5f5585104d",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "LumiPlains-Boulders-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-c43ce83d-58c5-51e9-9271-bf8d79209154",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-lumi-boulders-ca7f7c4a-bb37-4107-acff-243a4c9bab36",
+					"Type": "Imported",
+					"Name": "Plains1_Oak_Boulders"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-lumi-encounters-7a3bd9a2-f701-446e-886d-2d40cd4fbd80",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-6b6bcb0c-5b8f-54c3-a2ff-83aee216d5aa",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-f333ecca-547f-5d44-b6b6-d3f5789be8a7",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-d10ae2ad-5ef6-5e02-bcde-c730f710def8",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-5ae329e7-7ba7-5727-8466-dee8415e27dc",
+							"X": 48,
+							"Y": 48,
+							"Z": 48
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-53050f01-452e-50c7-be45-c05de7e1f745",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "LumiPlains-Encounters-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-5f1c51d5-0629-5719-aa1c-20aadda1aaee",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-lumi-encounters-7a3bd9a2-f701-446e-886d-2d40cd4fbd80",
+					"Type": "Imported",
+					"Name": "Luminara_Encounters"
+				}
+			}
+		},
+		{
+			"$NodeId": "Runtime-ore-LuminaraPlainsGreen-bulk-edit-0106",
+			"Skip": false,
+			"Runtime": 2,
+			"PropDistribution": {
+				"$NodeId": "Assigned.PropDistribution-0fbf00e0-2839-50f3-9613-8d2b90ac9ee4",
+				"Type": "Assigned",
+				"PropDistribution": {
+					"$NodeId": "Positions.PropDistribution-1e49f3b3-b90b-5c87-ba48-684f99a1f08c",
+					"Type": "Positions",
+					"Positions": {
+						"$NodeId": "Scaler.Positions-db971309-d170-5434-9865-d214f4b07368",
+						"Type": "Scaler",
+						"Skip": false,
+						"Scale": {
+							"$NodeId": "Point3D-404c3d7a-8248-5dc1-b1c4-53bbdd89c116",
+							"X": 8,
+							"Y": 8,
+							"Z": 8
+						},
+						"Positions": {
+							"$NodeId": "Jitter2d.Positions-79fffd73-ced3-5e91-98c7-b5ff839e5006",
+							"Type": "Jitter2d",
+							"Skip": false,
+							"Magnitude": 0.5,
+							"Seed": "Lumi-Ores-Pos",
+							"Positions": {
+								"$NodeId": "TriangularGrid2d.Positions-715d7173-fbd1-52c8-a606-fd8ebebe8a47",
+								"Type": "TriangularGrid2d",
+								"Skip": false
+							}
+						}
+					}
+				},
+				"Assignments": {
+					"$NodeId": "Imported.Assignments-ore-LuminaraPlainsGreen-bulk-edit-0109",
+					"Type": "Imported",
+					"Name": "Luminara_Ores"
+				}
+			}
+		}
+	],
+	"EnvironmentProvider": {
+		"$NodeId": "Constant.EnvironmentProvider-f6a3b3c4-d5e6-7890-abcd-ef0123456713",
+		"Type": "Constant",
+		"Environment": "Env_Luminara"
+	},
+	"TintProvider": {
+		"$NodeId": "Constant.TintProvider-f6a3b3c4-d5e6-7890-abcd-ef0123456714",
+		"Type": "Constant",
+		"Color": "#613B61"
+	}
+}
